@@ -26,8 +26,8 @@
   },
   {
     "path": ".github/workflows/ci.yml",
-    "bytes": 2307,
-    "sha256": "2397986f3114b84e541ae7585562a67d57b8fd210c6c70f692b7047601e21fe5"
+    "bytes": 2317,
+    "sha256": "58c0e7927b4963856b7f04560d47f2e5a80db7e53c7670722959f2f062b12931"
   },
   {
     "path": ".gitignore",
@@ -116,33 +116,33 @@
   },
   {
     "path": "artifacts/global_low_rank_1024_r8.benchmark.json",
-    "bytes": 187,
-    "sha256": "5740d365c682e1874fa4d82ed73b9eb0b060287b4b9c24517f2def042b9fe96e"
+    "bytes": 179,
+    "sha256": "ad8117bf767a093a1df21d946e98a3cf36ee5e37ed1f8c930bfb37356557bdaa"
   },
   {
     "path": "artifacts/global_low_rank_1024_r8.closure.json",
-    "bytes": 480325,
-    "sha256": "e7e5d2b6cb5651aef951ad24ce7d4516f020d87b30c170a7808a26fae6ad7dd4"
+    "bytes": 446769,
+    "sha256": "ebfa0996695e2a40277d9c43f5a9ec81aee336a1d3ef7aec02c17fe3877e5918"
   },
   {
     "path": "artifacts/random_dense_control_512.benchmark.json",
-    "bytes": 185,
-    "sha256": "6aba1ad67b5b6693673adf2e66e3c70639e1c11bf300758327f1c05b219c21f0"
+    "bytes": 177,
+    "sha256": "43155d02e4bb7d22e05741229429b379ad1bc795dc1c551d30756f2167f49213"
   },
   {
     "path": "artifacts/random_dense_control_512.closure.json",
-    "bytes": 243166,
-    "sha256": "e77538a1ac12e95a8583844974c959a9ecd7aa3ed8dfbee2d5c9c20a52851f9e"
+    "bytes": 226066,
+    "sha256": "43d01ce316ebe225a7f8e249af524574d876ec772ff82e1d87c53c07dbf13872"
   },
   {
     "path": "artifacts/synthetic_hadamard_1024.benchmark.json",
-    "bytes": 188,
-    "sha256": "38f3508366d175fc2194ce4d65504f2d85be122cff69ec2620e6ed48ce2fceb7"
+    "bytes": 180,
+    "sha256": "72424e75123183d05eeda24f57593b001855d9732dd472f6d67f50c172417bd7"
   },
   {
     "path": "artifacts/synthetic_hadamard_1024.closure.json",
-    "bytes": 481960,
-    "sha256": "a78fb99d01fd9f57686535d277e4de1a9dfacb690c8ae3b038a10837ee5df3e9"
+    "bytes": 448404,
+    "sha256": "a42b80b5e7652db2a1e9aa3926e7980cd10faf15d9eb0807986e5396fbc7f236"
   },
   {
     "path": "ci/__init__.py",
@@ -311,8 +311,8 @@
   },
   {
     "path": "scripts/build_manifest.py",
-    "bytes": 1109,
-    "sha256": "bbac8cd19dc08bc0d957090dd6c686c6b5e806dc8f86a46cb0660e5780b762f0"
+    "bytes": 1334,
+    "sha256": "96c548c565f06983a95a9db2055171b03e34da1a2fec8a3871c9c04eea736f57"
   },
   {
     "path": "scripts/run_all_smoke.py",

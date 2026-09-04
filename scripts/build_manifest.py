@@ -6,10 +6,14 @@ import subprocess
 from pathlib import Path
 
 
-def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    digest.update(path.read_bytes())
-    return digest.hexdigest()
+def indexed_bytes(root: Path, relative: str) -> bytes:
+    """Return the canonical staged blob, independent of checkout line endings."""
+    return subprocess.run(
+        ["git", "show", f":{relative}"],
+        cwd=root,
+        check=True,
+        capture_output=True,
+    ).stdout
 
 
 def main() -> None:
@@ -27,11 +31,12 @@ def main() -> None:
             continue
         path = root / relative
         if path.is_file():
+            content = indexed_bytes(root, relative)
             records.append(
                 {
                     "path": relative.replace("\\", "/"),
-                    "bytes": path.stat().st_size,
-                    "sha256": sha256(path),
+                    "bytes": len(content),
+                    "sha256": hashlib.sha256(content).hexdigest(),
                 }
             )
     output = root / "MANIFEST.json"
