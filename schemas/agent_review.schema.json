@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GCL Agent Review Ledger",
+  "type": "object",
+  "required": ["work_package", "artifact", "reviews", "unresolved_obligations"],
+  "properties": {
+    "work_package": {"type": "string"},
+    "artifact": {"type": "string"},
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "status", "evidence"],
+        "properties": {
+          "role": {
+            "enum": ["Axiomatist", "Cartographer", "Compiler", "Verifier", "Adversary", "Formalist", "Amanuensis", "Referee"]
+          },
+          "status": {"enum": ["pending", "approved", "changes_requested", "blocked"]},
+          "evidence": {"type": "string"}
+        }
+      }
+    },
+    "unresolved_obligations": {"type": "array", "items": {"type": "string"}}
+  }
+}

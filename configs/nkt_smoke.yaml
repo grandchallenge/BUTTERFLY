@@ -1,0 +1,13 @@
+name: nkt_smoke
+operator:
+  transport_kind: hadamard_butterfly
+  size: 1024
+  damping: 0.01
+solver:
+  tolerance: 1.0e-8
+  max_iterations: 32
+benchmark:
+  repetitions: 20
+  warmup: 5
+  seed: 0
+output_dir: artifacts

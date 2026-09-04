@@ -1,0 +1,53 @@
+name: Governed work package
+description: Define one bounded BUTTERFLY research or implementation obligation.
+title: "[BFC-000] "
+labels: ["work-package"]
+body:
+  - type: input
+    id: identifier
+    attributes:
+      label: Stable BFC identifier
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose and bounded scope
+    validations:
+      required: true
+  - type: input
+    id: artifact
+    attributes:
+      label: Authoritative artifact
+    validations:
+      required: true
+  - type: textarea
+    id: claim_boundary
+    attributes:
+      label: Claim and authority boundary
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance and falsification criteria
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Verification commands and evidence route
+    validations:
+      required: true
+  - type: input
+    id: gate
+    attributes:
+      label: Current promotion gate
+    validations:
+      required: true
+  - type: textarea
+    id: next
+    attributes:
+      label: Next finite obligation and review date
+    validations:
+      required: true

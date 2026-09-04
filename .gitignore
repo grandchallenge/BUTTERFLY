@@ -1,4 +1,4 @@
-.venv/
+.venv*/
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -9,3 +9,4 @@ build/
 *.egg-info/
 artifacts/**
 !artifacts/.gitkeep
+!artifacts/**/*.json

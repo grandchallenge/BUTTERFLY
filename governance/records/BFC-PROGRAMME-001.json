@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schemas/institutional_record.schema.json",
+  "schema_version": "1.0.0",
+  "record_class": "programme",
+  "identifier": "BFC-PROGRAMME-001",
+  "status": "candidate",
+  "authority_boundary": "Work-package state and bounded Referee-governed research results only; no certification, deployment, hardware, novelty, safety, manufacturing, product, or commercial authority.",
+  "subject": {
+    "repository": "grandchallenge/BUTTERFLY",
+    "path": "docs/PROGRAMME_CHARTER.md",
+    "commit": "3bff7e7cf41e649591e36226b5927b5118a679cd",
+    "sha256": "b1c780739505508ce0ce072a437de53a77d1fcbe7999f2e49f070756339cc245"
+  },
+  "evidence": ["PROGRAMME_SPEC.md", "ARCHITECTURE.md", "CONTRACTS.md", "WORK_BREAKDOWN.md"],
+  "supersedes": null,
+  "reversal_conditions": ["Reference baseline cannot be reproduced", "Required governance controls cannot be enforced", "Human Steward withholds public admission"],
+  "unresolved_obligations": ["Independent Adversary finding", "Independent Referee finding", "Human Steward exact-packet authorization", "Protected cross-repository integration and public readback"]
+}

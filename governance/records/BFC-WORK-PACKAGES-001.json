@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/institutional_record.schema.json",
+  "schema_version": "1.0.0",
+  "record_class": "work_package",
+  "identifier": "BFC-WORK-PACKAGES-001",
+  "status": "candidate",
+  "authority_boundary": "This registry describes candidate work and dependencies; it does not promote any work package or authorize downstream claims.",
+  "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "WORK_BREAKDOWN.md", "commit": "3bff7e7cf41e649591e36226b5927b5118a679cd", "sha256": "ff87ef7120a4ff8f2ee56813332b80773e464a01d1e11f4f975ba6b27210d3ea"},
+  "evidence": ["codex/WP1_OBSERVATORY.md", "codex/WP3_COMPILER.md", "codex/WP4_CERTIFICATION.md", "codex/WP7_BENCHMARKS.md"],
+  "unresolved_obligations": ["BFC-010 complex rectangular uncertainty study", "BFC-040 generic noncanonical sparse compiler", "BFC-050 adversarial hidden-residual certification", "BFC-060 through BFC-100 remain gated"]
+}

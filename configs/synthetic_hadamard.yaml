@@ -1,0 +1,17 @@
+name: synthetic_hadamard_1024
+operator:
+  kind: hadamard_butterfly
+  size: 1024
+inspection:
+  tolerance: 1.0e-10
+  rank_budget: 1
+  blocks_per_level: 8
+  input_order: natural
+  output_order: bit_reversal
+  oversampling: 4
+  seed: 0
+benchmark:
+  repetitions: 100
+  warmup: 10
+  seed: 0
+output_dir: artifacts

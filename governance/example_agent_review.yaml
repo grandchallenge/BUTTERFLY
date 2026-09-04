@@ -1,0 +1,29 @@
+work_package: WP1
+artifact: src/bclosure/probes/randomized.py
+reviews:
+  - role: Axiomatist
+    status: pending
+    evidence: ""
+  - role: Cartographer
+    status: pending
+    evidence: ""
+  - role: Compiler
+    status: pending
+    evidence: ""
+  - role: Verifier
+    status: pending
+    evidence: ""
+  - role: Adversary
+    status: pending
+    evidence: ""
+  - role: Formalist
+    status: pending
+    evidence: ""
+  - role: Amanuensis
+    status: pending
+    evidence: ""
+  - role: Referee
+    status: pending
+    evidence: ""
+unresolved_obligations:
+  - Validate randomized estimator on complex rectangular operators.

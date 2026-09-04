@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schemas/institutional_record.schema.json",
+  "schema_version": "1.0.0",
+  "record_class": "claim_ledger",
+  "identifier": "BFC-CLAIMS-001",
+  "status": "candidate",
+  "authority_boundary": "Observed reference measurements are candidate software evidence and are not general scientific claims or mathematical certification.",
+  "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "VALIDATION.md", "commit": "3bff7e7cf41e649591e36226b5927b5118a679cd", "sha256": "647baa2ecce5e162e8964e2e642d5d8add670d51cfb9f7d6c567a67dbabfc6ca"},
+  "evidence": ["tests/", "configs/", "artifacts/"],
+  "claims": [
+    {"claim": "Normalized Hadamard reference execution and adjoint satisfy the declared finite tests", "status": "candidate", "boundary": "Only exact tested sizes, dtype, implementation, commit, and recorded environment"},
+    {"claim": "Sampled random dense controls are rejected under the declared small rank budget", "status": "candidate", "boundary": "Only frozen seeds, samples, sizes, estimator, tolerance, and rank budget"},
+    {"claim": "A generic algebraic butterfly compiler is operational", "status": "rejected", "boundary": "WP3 is explicitly unimplemented and raises NotImplementedError"}
+  ],
+  "unresolved_obligations": ["Fresh clean-environment qualification", "Exact evidence manifest", "Independent review"]
+}
