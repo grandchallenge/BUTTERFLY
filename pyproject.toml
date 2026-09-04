@@ -9,7 +9,7 @@ description = "Reference implementation for GCL Butterfly Closure"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-  "numpy>=1.26,<2.0",
+  "numpy>=1.26,<3.0",
   "scipy>=1.11,<1.14",
   "PyYAML>=6.0",
 ]
