@@ -23,7 +23,7 @@
       "required": ["repository", "path", "commit", "sha256"],
       "properties": {
         "repository": {"const": "grandchallenge/BUTTERFLY"},
-        "path": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)[^\\\\]+$"},
+        "path": {"type": "string", "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\]+$"},
         "commit": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{40}$"}, {"const": "PENDING_EXACT_CANDIDATE"}]},
         "sha256": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{64}$"}, {"const": "PENDING_EXACT_CANDIDATE"}]}
       }

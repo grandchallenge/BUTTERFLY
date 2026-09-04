@@ -37,8 +37,8 @@ def run_inspect(config_path: str) -> Path:
 def run_benchmark(config_path: str) -> Path:
     cfg = load_config(config_path)
     operator = make_operator(cfg.operator)
-    result = benchmark_operator(operator, **cfg.benchmark)
     path = Path(cfg.output_dir) / f"{cfg.name}.benchmark.json"
+    result = benchmark_operator(operator, artifact_path=str(path), **cfg.benchmark)
     _write_json(path, result.to_dict())
     print(json.dumps(result.to_dict(), indent=2, default=str))
     return path

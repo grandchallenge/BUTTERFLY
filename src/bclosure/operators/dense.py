@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import hashlib
+import json
 from dataclasses import dataclass
 from typing import Any, cast
 
@@ -14,9 +16,10 @@ class DenseLinearOperator(LinearOperator):
     matrix: NDArray[Any]
 
     def __init__(self, matrix: Array, metadata: dict[str, Any] | None = None) -> None:
-        a = np.asarray(matrix)
+        a = np.array(matrix, copy=True, order="C")
         if a.ndim != 2:
             raise ValueError("matrix must be two-dimensional")
+        a.setflags(write=False)
         object.__setattr__(self, "matrix", a)
         object.__setattr__(self, "shape", (int(a.shape[0]), int(a.shape[1])))
         object.__setattr__(self, "dtype", a.dtype)
@@ -34,3 +37,11 @@ class DenseLinearOperator(LinearOperator):
         if x.shape != (self.shape[0],):
             raise ValueError(f"expected {(self.shape[0],)}, got {x.shape}")
         return cast(Array, self.matrix.conj().T @ x)
+
+    def fingerprint(self) -> str:
+        digest = hashlib.sha256()
+        digest.update(self.dtype.str.encode("ascii"))
+        digest.update(str(self.shape).encode("ascii"))
+        digest.update(self.matrix.tobytes(order="C"))
+        digest.update(json.dumps(self.metadata, sort_keys=True, default=str).encode("utf-8"))
+        return f"sha256:{digest.hexdigest()}"

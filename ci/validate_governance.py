@@ -14,6 +14,10 @@ RECORDS = ROOT / "governance/records"
 REQUIRED_CLASSES = {
     "programme", "work_package", "claim_ledger", "negative_knowledge", "promotion"
 }
+REQUIRED_REVIEW_ROLES = {
+    "Axiomatist", "Cartographer", "Compiler", "Verifier", "Adversary",
+    "Formalist", "Amanuensis", "Referee", "Human Steward",
+}
 
 
 def committed_digest(commit: str, relative: str) -> str | None:
@@ -26,6 +30,61 @@ def committed_digest(commit: str, relative: str) -> str | None:
     if result.returncode != 0:
         return None
     return hashlib.sha256(result.stdout).hexdigest()
+
+
+def semantic_errors(records: list[dict[str, object]]) -> list[str]:
+    errors: list[str] = []
+    classes = {str(record.get("record_class")) for record in records}
+    missing = REQUIRED_CLASSES - classes
+    if missing:
+        errors.append(f"missing record classes: {sorted(missing)}")
+
+    admissions = [record for record in records if record.get("identifier") == "BFC-ADMISSION-001"]
+    if len(admissions) != 1:
+        errors.append("exactly one BFC-ADMISSION-001 record is required")
+    else:
+        admission = admissions[0]
+        reviews = admission.get("reviews", [])
+        roles = [review.get("role") for review in reviews if isinstance(review, dict)] if isinstance(reviews, list) else []
+        if len(roles) != len(set(roles)):
+            errors.append("BFC-ADMISSION-001 contains duplicate review roles")
+        if admission.get("status") in {"admitted", "promoted"}:
+            subject = admission.get("subject", {})
+            if not isinstance(subject, dict) or "PENDING_EXACT_CANDIDATE" in {
+                subject.get("commit"), subject.get("sha256")
+            }:
+                errors.append("admitted record has unresolved subject identity")
+            if not admission.get("evidence"):
+                errors.append("admitted record has no evidence")
+            if admission.get("unresolved_obligations"):
+                errors.append("admitted record retains unresolved obligations")
+            if set(roles) != REQUIRED_REVIEW_ROLES:
+                errors.append("admitted record does not contain the complete required office set")
+            if any(review.get("status") != "approved" for review in reviews if isinstance(review, dict)):
+                errors.append("admitted record has a non-approved review")
+            if any(
+                not review.get("evidence")
+                or review.get("reviewer") == "pending"
+                or review.get("session") == "pending"
+                for review in reviews if isinstance(review, dict)
+            ):
+                errors.append("admitted record has incomplete review identity or evidence")
+            by_role = {review["role"]: review for review in reviews if isinstance(review, dict)}
+            adversary = by_role.get("Adversary", {})
+            referee = by_role.get("Referee", {})
+            if adversary.get("reviewer") == referee.get("reviewer") or adversary.get("session") == referee.get("session"):
+                errors.append("Adversary and Referee must have distinct reviewers and sessions")
+    promoted = [
+        record for record in records
+        if record.get("status") == "promoted"
+        or any(
+            isinstance(claim, dict) and claim.get("status") == "promoted"
+            for claim in record.get("claims", []) if isinstance(record.get("claims"), list)
+        )
+    ]
+    if promoted and (not admissions or admissions[0].get("status") != "admitted"):
+        errors.append("promotion requires an admitted BFC-ADMISSION-001 record")
+    return errors
 
 
 def validate() -> list[str]:
@@ -48,33 +107,8 @@ def validate() -> list[str]:
                 and expected not in {None, "PENDING_EXACT_CANDIDATE"}
                 and committed_digest(commit, relative) != expected
             ):
-                    errors.append(f"{path.relative_to(ROOT)}: subject digest mismatch")
-
-    classes = {str(record.get("record_class")) for record in records}
-    missing = REQUIRED_CLASSES - classes
-    if missing:
-        errors.append(f"missing record classes: {sorted(missing)}")
-
-    admissions = [record for record in records if record.get("identifier") == "BFC-ADMISSION-001"]
-    if len(admissions) != 1:
-        errors.append("exactly one BFC-ADMISSION-001 record is required")
-    else:
-        admission = admissions[0]
-        reviews = admission.get("reviews", [])
-        roles = [review.get("role") for review in reviews if isinstance(review, dict)] if isinstance(reviews, list) else []
-        if len(roles) != len(set(roles)):
-            errors.append("BFC-ADMISSION-001 contains duplicate review roles")
-        if admission.get("status") in {"admitted", "promoted"}:
-            if admission.get("unresolved_obligations"):
-                errors.append("admitted record retains unresolved obligations")
-            if any(review.get("status") != "approved" for review in reviews if isinstance(review, dict)):
-                errors.append("admitted record has a non-approved review")
-            by_role = {review["role"]: review for review in reviews if isinstance(review, dict)}
-            adversary = by_role.get("Adversary", {})
-            referee = by_role.get("Referee", {})
-            if adversary.get("reviewer") == referee.get("reviewer") or adversary.get("session") == referee.get("session"):
-                errors.append("Adversary and Referee must have distinct reviewers and sessions")
-    return errors
+                errors.append(f"{path.relative_to(ROOT)}: subject digest mismatch")
+    return errors + semantic_errors(records)
 
 
 def main() -> int:

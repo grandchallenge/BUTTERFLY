@@ -39,3 +39,17 @@ def test_hidden_direction_is_detected_when_explicitly_probed() -> None:
     certificate = certify_operator(target, approximation, probes=128, seed=31)
     assert certificate.forward_relative_error > 0.1
     assert certificate.adjoint_relative_error > 0.1
+
+
+def test_dense_fingerprint_is_content_addressed_and_matrix_is_immutable() -> None:
+    first_matrix = np.eye(4)
+    second_matrix = np.eye(4)
+    second_matrix[0, 0] = 2.0
+    first = DenseLinearOperator(first_matrix)
+    second = DenseLinearOperator(second_matrix)
+    assert first.fingerprint().startswith("sha256:")
+    assert first.fingerprint() != second.fingerprint()
+    first_matrix[0, 0] = 9.0
+    assert first.fingerprint() != DenseLinearOperator(first_matrix).fingerprint()
+    with np.testing.assert_raises(ValueError):
+        first.matrix[0, 0] = 7.0

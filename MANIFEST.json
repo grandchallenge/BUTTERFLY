@@ -151,8 +151,8 @@
   },
   {
     "path": "ci/validate_governance.py",
-    "bytes": 3488,
-    "sha256": "736dff13d532ee7dd43e0e13bdde3b5c20c1f17cd49941cab2b886ad2d24434c"
+    "bytes": 5139,
+    "sha256": "e1e046a6feaaf30f3f78020c80ca121a507a79d4b7b24002dbe612c6fdaeb75c"
   },
   {
     "path": "codex/00_INITIATOR.md",
@@ -255,6 +255,11 @@
     "sha256": "1e7588fd5f8bcdb12e787369a39a3767579da38f41fb03552b6ae33dcd5426fd"
   },
   {
+    "path": "docs/decisions/ADR-0002_CONTENT_ADDRESSED_DENSE_OPERATORS.md",
+    "bytes": 1251,
+    "sha256": "5c418959cf257b7949afb107e61d3c641c2e998f237e5be3b4103ef3c162cb26"
+  },
+  {
     "path": "governance/example_agent_review.yaml",
     "bytes": 620,
     "sha256": "6e7feaac2425a3491ff4379fb795191cd840ad783ab820d679a4ac56a907e32c"
@@ -306,8 +311,8 @@
   },
   {
     "path": "schemas/institutional_record.schema.json",
-    "bytes": 2909,
-    "sha256": "df21eda11ac91a95321c3a386d6c4b308ca83ecd4e73a4f5da42338909c37d2e"
+    "bytes": 2936,
+    "sha256": "0f2bb6df74e99558d02f358c1bddd69caf79d291f9e53c8489b2482dcbe303b0"
   },
   {
     "path": "scripts/build_manifest.py",
@@ -326,8 +331,8 @@
   },
   {
     "path": "src/bclosure/benchmarks.py",
-    "bytes": 1144,
-    "sha256": "9bf9313097d07717f0480c1bba1df046f3621d83d1462288c9b4dd485950bfe4"
+    "bytes": 3245,
+    "sha256": "9cb2f357316dbc9cb2d9cf7279066b9c0d2a819e2f04742d87f24c8d499d211a"
   },
   {
     "path": "src/bclosure/certification.py",
@@ -336,8 +341,8 @@
   },
   {
     "path": "src/bclosure/cli.py",
-    "bytes": 2039,
-    "sha256": "9df3dfeeaf0cc4ceb9b3521b5b4f15dde81d1644068ac68adac940b7f9e6d4d8"
+    "bytes": 2064,
+    "sha256": "bff0e648dd12b10a4b7f29704c306e735a58ea4b2223bd5f6960b6151811f5b6"
   },
   {
     "path": "src/bclosure/compiler.py",
@@ -416,8 +421,8 @@
   },
   {
     "path": "src/bclosure/operators/dense.py",
-    "bytes": 1270,
-    "sha256": "0e3418533b3408d715570ac3a9458b5db87d3d13c7319a93d9ae42c4267c7ba7"
+    "bytes": 1721,
+    "sha256": "e8f37fb709ed639456f86933a7a4a762ccce204d6317e4c4efa4e280cc8beef0"
   },
   {
     "path": "src/bclosure/probes/__init__.py",
@@ -471,8 +476,8 @@
   },
   {
     "path": "tests/test_governance.py",
-    "bytes": 837,
-    "sha256": "8d674491ff706091931528cb16e4a6cfa91e026cfd89f21cba0552c631850bd2"
+    "bytes": 1867,
+    "sha256": "36fccf418df850fd260157cc116a786d986218073e3077fc9eed354fe31a048c"
   },
   {
     "path": "tests/test_hadamard.py",
@@ -491,8 +496,8 @@
   },
   {
     "path": "tests/test_qualification_controls.py",
-    "bytes": 1910,
-    "sha256": "3a07da7763cc7d6141c6ad43935dd6e8dbf2838a6512c1ded2f93d613bcd9d0a"
+    "bytes": 2477,
+    "sha256": "c4913675399e82a988ca1afa4797c12cb4c1ad37204694b53b52ce7ddf477bd2"
   },
   {
     "path": "tests/test_tree_ordering.py",
