@@ -331,8 +331,8 @@
   },
   {
     "path": "src/bclosure/benchmarks.py",
-    "bytes": 3245,
-    "sha256": "9cb2f357316dbc9cb2d9cf7279066b9c0d2a819e2f04742d87f24c8d499d211a"
+    "bytes": 3436,
+    "sha256": "0247987ce70217c0b0dc62931a821f3709640076188bb39f067cdc3df82c6534"
   },
   {
     "path": "src/bclosure/certification.py",

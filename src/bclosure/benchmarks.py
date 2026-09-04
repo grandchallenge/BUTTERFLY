@@ -59,7 +59,13 @@ def benchmark_operator(
     ).stdout.strip() or "unavailable"
     dirty = bool(
         subprocess.run(
-            ["git", "status", "--porcelain"], capture_output=True, check=False, text=True
+            [
+                "git", "status", "--porcelain", "--untracked-files=no", "--", ".",
+                ":(exclude)artifacts/**",
+            ],
+            capture_output=True,
+            check=False,
+            text=True,
         ).stdout.strip()
     )
     rng = np.random.default_rng(seed)
@@ -103,5 +109,5 @@ def benchmark_operator(
         operator_error=None,
         task_delta=None,
         break_even_horizon=None,
-        artifact_path=artifact_path,
+        artifact_path=artifact_path.replace("\\", "/") if artifact_path else None,
     )
