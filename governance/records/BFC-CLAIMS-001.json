@@ -5,7 +5,7 @@
   "identifier": "BFC-CLAIMS-001",
   "status": "candidate",
   "authority_boundary": "Observed reference measurements are candidate software evidence and are not general scientific claims or mathematical certification.",
-  "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "VALIDATION.md", "commit": "PENDING_EXACT_CANDIDATE", "sha256": "PENDING_EXACT_CANDIDATE"},
+  "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "VALIDATION.md", "commit": "3bff7e7cf41e649591e36226b5927b5118a679cd", "sha256": "647baa2ecce5e162e8964e2e642d5d8add670d51cfb9f7d6c567a67dbabfc6ca"},
   "evidence": ["tests/", "configs/", "artifacts/"],
   "claims": [
     {"claim": "Normalized Hadamard reference execution and adjoint satisfy the declared finite tests", "status": "candidate", "boundary": "Only exact tested sizes, dtype, implementation, commit, and recorded environment"},

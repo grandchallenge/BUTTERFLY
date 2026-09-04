@@ -5,7 +5,7 @@
   "identifier": "BFC-NEGATIVE-001",
   "status": "candidate",
   "authority_boundary": "Retained failures narrow future claims and cannot be converted into positive evidence without a separately reviewed successor.",
-  "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "src/bclosure/compiler.py", "commit": "PENDING_EXACT_CANDIDATE", "sha256": "PENDING_EXACT_CANDIDATE"},
+  "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "src/bclosure/compiler.py", "commit": "3bff7e7cf41e649591e36226b5927b5118a679cd", "sha256": "462ed4823034169074d05a01eda7286d2e07c4940bda57e28deeff79500887f3"},
   "evidence": ["VALIDATION.md", "codex/ADVERSARY.md"],
   "claims": [
     {"claim": "Direct pytest execution in an uninstalled checkout succeeds", "status": "rejected", "boundary": "Observed import failure when the src-layout package is not installed"},

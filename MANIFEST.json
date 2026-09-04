@@ -106,8 +106,8 @@
   },
   {
     "path": "artifacts/BFC-BASELINE-QUALIFICATION-001.json",
-    "bytes": 2035,
-    "sha256": "d88e8282f2f66b490848d5e5282f7450dfc0bcd9388183a5724428e6e2ebda90"
+    "bytes": 2052,
+    "sha256": "8fcde4e8d7679b9a29ef3098b5413fdf1b4e392c1fe1e17c3d49b3b11283e23b"
   },
   {
     "path": "artifacts/global_low_rank_1024_r8.benchmark.json",
@@ -141,8 +141,8 @@
   },
   {
     "path": "ci/validate_governance.py",
-    "bytes": 3148,
-    "sha256": "8e3416e5c28c473fff623f731a6060a342f81c68c4e365aa86b8247c0b72f147"
+    "bytes": 3488,
+    "sha256": "736dff13d532ee7dd43e0e13bdde3b5c20c1f17cd49941cab2b886ad2d24434c"
   },
   {
     "path": "codex/00_INITIATOR.md",
@@ -246,33 +246,33 @@
   },
   {
     "path": "governance/records/BFC-ADMISSION-001.json",
-    "bytes": 1846,
-    "sha256": "9bcf4ec1bc505f084c8f006a96cd63cbf15d3a106a2a9bb25e5ab15a8cef1135"
+    "bytes": 1877,
+    "sha256": "8fd631f48a5dedb725279e1fcb177c446157d019cff03183d8144adb29a6cf14"
   },
   {
     "path": "governance/records/BFC-CLAIMS-001.json",
-    "bytes": 1298,
-    "sha256": "82c95450fa7488bc3e4228334826c6ac0a8767c7988bf7c77f8947c235f185b0"
+    "bytes": 1356,
+    "sha256": "6ecc1067b5802cecd48b9d569f03c1014b698638421786f147a496094e358434"
   },
   {
     "path": "governance/records/BFC-EVIDENCE-001.json",
-    "bytes": 1033,
-    "sha256": "1532e0912c7399191cee72c3febc4f9c51b5efa48dd0b3fcf220207af1b79705"
+    "bytes": 1091,
+    "sha256": "421fff1de9c92f314f41daaca3e61d0d3df571f491c539213626ba16fb73c9cb"
   },
   {
     "path": "governance/records/BFC-NEGATIVE-001.json",
-    "bytes": 1135,
-    "sha256": "110092dc88cf846aeceb5e8d1b97bb3e39daf9e834f391024913749c129cf587"
+    "bytes": 1193,
+    "sha256": "83ec8a5e6bd51ab0fda0b8aa10888035534e3b97aed9870cbcd227954f043161"
   },
   {
     "path": "governance/records/BFC-PROGRAMME-001.json",
-    "bytes": 1060,
-    "sha256": "477626b2f5b52245d0227b2ff0896aee2221b0d9b2beb7a41e3f947201ef013b"
+    "bytes": 1118,
+    "sha256": "e06a02261c4c7bffc8508ab63b899f1e40c60d3d21205b610a63d64da2a59886"
   },
   {
     "path": "governance/records/BFC-WORK-PACKAGES-001.json",
-    "bytes": 854,
-    "sha256": "853b156d2c9fcd6ccb32766582af5ce1cf0c74f4aa142ff9dd9ffd54d7263e94"
+    "bytes": 912,
+    "sha256": "7eef155ae3d5dcb695c0805ed983dad1d51dc134a5ccfad1549bdbc1c25453cf"
   },
   {
     "path": "pyproject.toml",

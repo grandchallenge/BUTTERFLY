@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -15,8 +16,16 @@ REQUIRED_CLASSES = {
 }
 
 
-def digest(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+def committed_digest(commit: str, relative: str) -> str | None:
+    result = subprocess.run(
+        ["git", "show", f"{commit}:{relative}"],
+        cwd=ROOT,
+        capture_output=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        return None
+    return hashlib.sha256(result.stdout).hexdigest()
 
 
 def validate() -> list[str]:
@@ -31,10 +40,14 @@ def validate() -> list[str]:
         subject = record.get("subject", {})
         if isinstance(subject, dict):
             relative = subject.get("path")
+            commit = subject.get("commit")
             expected = subject.get("sha256")
-            if isinstance(relative, str) and expected not in {None, "PENDING_EXACT_CANDIDATE"}:
-                target = ROOT / relative
-                if not target.is_file() or digest(target) != expected:
+            if (
+                isinstance(relative, str)
+                and isinstance(commit, str)
+                and expected not in {None, "PENDING_EXACT_CANDIDATE"}
+                and committed_digest(commit, relative) != expected
+            ):
                     errors.append(f"{path.relative_to(ROOT)}: subject digest mismatch")
 
     classes = {str(record.get("record_class")) for record in records}

@@ -5,7 +5,7 @@
   "identifier": "BFC-EVIDENCE-001",
   "status": "candidate",
   "authority_boundary": "Exact local qualification inventory only; evidence does not approve, admit, promote, certify, deploy, or authorize publication.",
-  "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "artifacts/BFC-BASELINE-QUALIFICATION-001.json", "commit": "PENDING_EXACT_CANDIDATE", "sha256": "PENDING_EXACT_CANDIDATE"},
+  "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "artifacts/BFC-BASELINE-QUALIFICATION-001.json", "commit": "3bff7e7cf41e649591e36226b5927b5118a679cd", "sha256": "d88e8282f2f66b490848d5e5282f7450dfc0bcd9388183a5724428e6e2ebda90"},
   "evidence": [
     "artifacts/synthetic_hadamard_1024.closure.json#a78fb99d01fd9f57686535d277e4de1a9dfacb690c8ae3b038a10837ee5df3e9",
     "artifacts/global_low_rank_1024_r8.closure.json#e7e5d2b6cb5651aef951ad24ce7d4516f020d87b30c170a7808a26fae6ad7dd4",

@@ -2,7 +2,7 @@
   "identifier": "BFC-BASELINE-QUALIFICATION-001",
   "status": "candidate_local_evidence",
   "executed_at": "2026-09-04",
-  "subject_commit": "PENDING_EXACT_CANDIDATE",
+  "subject_commit": "3bff7e7cf41e649591e36226b5927b5118a679cd",
   "environment": {
     "platform": "Windows-11-10.0.26200-SP0",
     "python": ["3.10.19", "3.12.10"],

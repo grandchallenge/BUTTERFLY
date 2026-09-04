@@ -8,8 +8,8 @@
   "subject": {
     "repository": "grandchallenge/BUTTERFLY",
     "path": "docs/PROGRAMME_CHARTER.md",
-    "commit": "PENDING_EXACT_CANDIDATE",
-    "sha256": "PENDING_EXACT_CANDIDATE"
+    "commit": "3bff7e7cf41e649591e36226b5927b5118a679cd",
+    "sha256": "b1c780739505508ce0ce072a437de53a77d1fcbe7999f2e49f070756339cc245"
   },
   "evidence": ["PROGRAMME_SPEC.md", "ARCHITECTURE.md", "CONTRACTS.md", "WORK_BREAKDOWN.md"],
   "supersedes": null,
