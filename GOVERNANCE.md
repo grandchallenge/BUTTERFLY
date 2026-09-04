@@ -25,13 +25,24 @@ certificate, benchmark, issue, release, or package is evidence only.
 
 ## Admission
 
-The completed admission required an exact-subject packet, distinct non-author Adversary and
-Referee findings from separate sessions, authenticated Human Steward
+The completed admission required an exact-subject packet, distinct non-authoring
+Adversary and Referee audit passes, authenticated Human Steward
 authorization, protected integration, settings readback, and a final public
 readback. Any subject or packet identity change invalidates prior findings and
 authorization.
 
-Automation may assemble, validate, route, replay, and execute deterministic
-protected transactions under an applicable standing or exact delegation. It
-may not manufacture human authorization, mathematical certification, claim
-promotion, deployment authority, or publication authority.
+Separation is functional and evidentiary, not a hot-potato staffing rule. The
+same Codex system may staff multiple non-reserved offices when it performs and
+records role-scoped logical audit passes. A logical pass identifier does not
+require a different conversation, agent, account, or model instance. A
+non-authoring review pass is read-only with respect to its exact subject; a
+subject change makes that finding stale.
+
+Automation may classify routine work, assemble and validate evidence, perform
+the applicable role passes, merge through protected checks, and verify readback
+under standing or exact delegation. Routine bounded work requires no fresh
+Human Steward action and no blanket approval count. For a genuinely reserved
+decision, automation may route, faithfully record, and mechanically execute the
+human decision but may not manufacture it. The full proportional operating
+contract is `docs/STREAMLINED_ROLE_OPERATING_MODEL.md` and its decision record
+is ADR-0003.

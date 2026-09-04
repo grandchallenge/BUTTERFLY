@@ -1,8 +1,9 @@
 ## Governed subject
 
-- Stable identifier:
-- Authoritative artifact:
-- Exact upstream identity, if any:
+- Stable BFC identifier:
+- Classification: `routine_bounded | substantive | reserved`
+- Exact commit / artifact digest:
+- Authoritative artifacts:
 - Claim boundary:
 - Current promotion gate:
 - Next finite obligation:
@@ -19,8 +20,11 @@
 
 - Unresolved obligations:
 - Reversal conditions:
-- Required office findings:
+- Applicable role-scoped audit passes (role + logical pass ID):
+- Reserved human decision, if explicitly required: `not_applicable | reference`
 
-Automation output, review requests, mergeability, and green checks are evidence
-only. They do not approve, certify, promote, admit, activate, or authorize
-publication.
+The same Codex system may staff multiple non-reserved roles; a separate agent,
+account, conversation, or approval click is not required. Each review pass must
+be role-scoped and read-only over the exact subject. Automation output, green
+CI, or a numerical certificate remains evidence only and does not manufacture
+human authority or MATHCERT certification.
