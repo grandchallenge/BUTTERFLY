@@ -271,8 +271,8 @@
   },
   {
     "path": "governance/records/BFC-ADMISSION-001.json",
-    "bytes": 1877,
-    "sha256": "8fd631f48a5dedb725279e1fcb177c446157d019cff03183d8144adb29a6cf14"
+    "bytes": 1985,
+    "sha256": "333a20e6ddeb69a4b9695b9216fb36de6b3e90028e2bcc67cd0a3930696bccd1"
   },
   {
     "path": "governance/records/BFC-CLAIMS-001.json",
@@ -281,8 +281,8 @@
   },
   {
     "path": "governance/records/BFC-EVIDENCE-001.json",
-    "bytes": 1091,
-    "sha256": "421fff1de9c92f314f41daaca3e61d0d3df571f491c539213626ba16fb73c9cb"
+    "bytes": 1097,
+    "sha256": "a8ab10a86e2c8456afa9207cd70c525562c432d5fbfd085f4a653fec1ba3807a"
   },
   {
     "path": "governance/records/BFC-NEGATIVE-001.json",

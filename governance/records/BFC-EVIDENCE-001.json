@@ -5,11 +5,11 @@
   "identifier": "BFC-EVIDENCE-001",
   "status": "candidate",
   "authority_boundary": "Exact local qualification inventory only; evidence does not approve, admit, promote, certify, deploy, or authorize publication.",
-  "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "artifacts/BFC-BASELINE-QUALIFICATION-001.json", "commit": "3bff7e7cf41e649591e36226b5927b5118a679cd", "sha256": "d88e8282f2f66b490848d5e5282f7450dfc0bcd9388183a5724428e6e2ebda90"},
+  "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "artifacts/BFC-REQUALIFICATION-002.json", "commit": "5cf0347b0846117b37245c7337afdeffc10da7f1", "sha256": "71e387278cc42097fa89d4c7820074a329a2687c69c5100e0a3e905845f90892"},
   "evidence": [
-    "artifacts/synthetic_hadamard_1024.closure.json#a78fb99d01fd9f57686535d277e4de1a9dfacb690c8ae3b038a10837ee5df3e9",
-    "artifacts/global_low_rank_1024_r8.closure.json#e7e5d2b6cb5651aef951ad24ce7d4516f020d87b30c170a7808a26fae6ad7dd4",
-    "artifacts/random_dense_control_512.closure.json#e77538a1ac12e95a8583844974c959a9ecd7aa3ed8dfbee2d5c9c20a52851f9e"
+    "artifacts/synthetic_hadamard_1024.closure.json#a42b80b5e7652db2a1e9aa3926e7980cd10faf15d9eb0807986e5396fbc7f236",
+    "artifacts/global_low_rank_1024_r8.closure.json#6267b2a2c0ad2b8cedcbd0597750d2a43cf0aae70a047f8f728e465711ec743f",
+    "artifacts/random_dense_control_512.closure.json#ad89ce59211016ab289ad8ee2125d9400ccd70d90898e52dffd3ee1ef65a8107"
   ],
-  "unresolved_obligations": ["Exact candidate binding", "Hosted CI run and attempt identity", "Independent review"]
+  "unresolved_obligations": ["Hosted exact-head CI attempt identity", "Fresh independent review", "Human Steward authorization"]
 }

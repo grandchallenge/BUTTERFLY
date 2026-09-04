@@ -6,7 +6,7 @@
   "status": "pending",
   "authority_boundary": "Candidate admission record only. It cannot admit the programme, authorize merge, change visibility, publish a release, or promote a scientific or mathematical claim.",
   "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "docs/PROGRAMME_CHARTER.md", "commit": "3bff7e7cf41e649591e36226b5927b5118a679cd", "sha256": "b1c780739505508ce0ce072a437de53a77d1fcbe7999f2e49f070756339cc245"},
-  "evidence": ["docs/decisions/ADR-0001_STANDALONE_GCL_PROGRAMME.md", "governance/records/BFC-PROGRAMME-001.json"],
+  "evidence": ["docs/decisions/ADR-0001_STANDALONE_GCL_PROGRAMME.md", "docs/decisions/ADR-0002_CONTENT_ADDRESSED_DENSE_OPERATORS.md", "governance/records/BFC-PROGRAMME-001.json", "governance/records/BFC-EVIDENCE-001.json"],
   "reviews": [
     {"role": "Axiomatist", "reviewer": "pending", "session": "pending", "status": "pending", "evidence": ""},
     {"role": "Cartographer", "reviewer": "pending", "session": "pending", "status": "pending", "evidence": ""},
