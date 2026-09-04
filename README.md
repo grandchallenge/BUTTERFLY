@@ -1,6 +1,6 @@
 # BUTTERFLY CLOSURE
 
-Status: `CANDIDATE_ONBOARDING_NOT_ADMITTED`
+Status: `ADOPTED_GCL_RESEARCH_PROGRAMME`
 
 Authority repository: `grandchallenge/BUTTERFLY`
 
@@ -10,10 +10,11 @@ Programme identifier: `BFC`
 
 This repository is the Codex-ready implementation package for the GCL Research Programme **BUTTERFLY CLOSURE**. It contains a runnable reference stack, explicit contracts, numerical tests, benchmark configurations, and role-specific implementation prompts.
 
-The repository is presently an admission candidate. Source placement, pull
-requests, CI, numerical certificates, and releases do not promote a scientific
-claim or constitute MATHCERT certification. The exact authority boundary is
-defined in `GOVERNANCE.md` and the protected programme records.
+The programme was publicly adopted through protected onboarding and portfolio
+records on 2026-09-04. Individual work packages, numerical evidence, and claims
+retain their own recorded states: programme adoption does not promote a
+scientific claim or constitute MATHCERT certification. The exact authority
+boundary is defined in `GOVERNANCE.md` and the protected programme records.
 
 ## Programme loop
 

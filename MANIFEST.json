@@ -61,8 +61,8 @@
   },
   {
     "path": "GOVERNANCE.md",
-    "bytes": 1464,
-    "sha256": "e0ac845075a58261ab9c8c1af99915dd7980fbdce773e6181730e54b2af4435b"
+    "bytes": 1762,
+    "sha256": "0b5d03ceab71718c1128c3f029382bd512738de7d92e9f5d69368562a9650fc1"
   },
   {
     "path": "METRICS.md",
@@ -81,8 +81,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 2686,
-    "sha256": "2bd5a9823e8f30a5605c32736c285a18626faff998d7679201955da42e8533c5"
+    "bytes": 2770,
+    "sha256": "7b11b9d7610307a443156296ba87c24813a2bc1492d9e69b78935c2b2eee3e0d"
   },
   {
     "path": "RUN_MATRIX.md",
@@ -240,6 +240,11 @@
     "sha256": "ef706463bf269cc1a895dddfeb0875e50bd36448d739180e2a3f9f474f890bec"
   },
   {
+    "path": "docs/ADOPTION_READBACK.md",
+    "bytes": 1318,
+    "sha256": "aff543c4b983d3420a92ac3aa06f984b9133ffbf01ad89b86e6de9f740f7239d"
+  },
+  {
     "path": "docs/NUMERICAL_POLICY.md",
     "bytes": 690,
     "sha256": "8d8a2f55ba732fdeb4c6ee4c2f5843aae437910fd4065ae8d2f2a40514b59721"
@@ -251,8 +256,8 @@
   },
   {
     "path": "docs/RELEASE_POLICY.md",
-    "bytes": 960,
-    "sha256": "2420b088bb2638ca0b5ffa113ea70d32309db2bb33ff5e09a0439bb95f52690b"
+    "bytes": 985,
+    "sha256": "834b89d78a896511b1ab2e0ad86b7e5fd16f438fa2b470aa7d37e3b1e266c32d"
   },
   {
     "path": "docs/decisions/ADR-0001_STANDALONE_GCL_PROGRAMME.md",

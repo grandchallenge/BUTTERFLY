@@ -1,8 +1,8 @@
 # Release Policy
 
-BUTTERFLY is an incubation candidate. No release, package publication, Pages
-deployment, or scientific claim promotion is authorized by the onboarding
-candidate or by green continuous-integration results.
+BUTTERFLY is an adopted research programme, but programme adoption does not
+authorize a release, package publication, Pages deployment, or scientific claim
+promotion. Green continuous-integration results confer no such authority.
 
 A release is eligible only after the relevant artifacts are admitted through
 the protected programme lifecycle and the Human Steward has authorized the
