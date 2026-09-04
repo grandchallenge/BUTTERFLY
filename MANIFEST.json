@@ -117,12 +117,12 @@
   {
     "path": "artifacts/BFC-REQUALIFICATION-002.json",
     "bytes": 2253,
-    "sha256": "71e387278cc42097fa89d4c7820074a329a2687c69c5100e0a3e905845f90892"
+    "sha256": "7d11c473e8ce16b08929a65d0b5540a35cb1bc6cef37ccf4be952cfcd7191cbf"
   },
   {
     "path": "artifacts/global_low_rank_1024_r8.benchmark.json",
-    "bytes": 962,
-    "sha256": "3ffbac7cd3b0f52e8f20da6e6de39622ec0d57b8822a59716de846a2d2944b51"
+    "bytes": 1369,
+    "sha256": "e6a20305f51e363933e9e2c640db3472816a22688b966105561f60ee1d115635"
   },
   {
     "path": "artifacts/global_low_rank_1024_r8.closure.json",
@@ -131,8 +131,8 @@
   },
   {
     "path": "artifacts/random_dense_control_512.benchmark.json",
-    "bytes": 956,
-    "sha256": "d9820c1689ceaa46a165537423d927ba4cefdfe2baa4092f41dad5385c84658f"
+    "bytes": 1364,
+    "sha256": "7cb1dead33713d3963da343b7748358cd8de48c1eda76ea736f2dc23d1238b75"
   },
   {
     "path": "artifacts/random_dense_control_512.closure.json",
@@ -141,8 +141,8 @@
   },
   {
     "path": "artifacts/synthetic_hadamard_1024.benchmark.json",
-    "bytes": 960,
-    "sha256": "26158b828361cf32c8fd160e78d87fd9413c9b49685fbefcbb706440ccd64f84"
+    "bytes": 1367,
+    "sha256": "0fa34cf16488ebfcec41c1516e3ff27f31c7050dca8970f5ca5301c6740a0b0b"
   },
   {
     "path": "artifacts/synthetic_hadamard_1024.closure.json",
