@@ -49,3 +49,23 @@ def test_admission_fails_closed_without_all_offices_and_exact_evidence() -> None
     errors = semantic_errors([hostile])
     assert any("unresolved subject identity" in error for error in errors)
     assert any("complete required office set" in error for error in errors)
+
+
+def test_claim_promotion_requires_claim_specific_referee_and_steward_authority() -> None:
+    admission = json.loads((ROOT / "governance/records/BFC-ADMISSION-001.json").read_text())
+    admission["status"] = "admitted"
+    admission["unresolved_obligations"] = []
+    for review in admission["reviews"]:
+        review.update(
+            reviewer=review["role"].lower(),
+            session=f"session-{review['role'].lower()}",
+            status="approved",
+            evidence="exact finding",
+        )
+    claims = json.loads((ROOT / "governance/records/BFC-CLAIMS-001.json").read_text())
+    claims["status"] = "promoted"
+    claims["claims"][0]["status"] = "promoted"
+    claims["unresolved_obligations"] = []
+    errors = semantic_errors([admission, claims])
+    assert any("promotion lacks exact Referee authorization" in error for error in errors)
+    assert any("promotion lacks exact Human Steward authorization" in error for error in errors)

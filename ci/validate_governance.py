@@ -84,6 +84,33 @@ def semantic_errors(records: list[dict[str, object]]) -> list[str]:
     ]
     if promoted and (not admissions or admissions[0].get("status") != "admitted"):
         errors.append("promotion requires an admitted BFC-ADMISSION-001 record")
+    for record in promoted:
+        subject = record.get("subject", {})
+        reviews = record.get("reviews", [])
+        by_role = {
+            review.get("role"): review
+            for review in reviews
+            if isinstance(review, dict)
+        } if isinstance(reviews, list) else {}
+        if record.get("unresolved_obligations"):
+            errors.append(f"{record.get('identifier')}: promoted record retains obligations")
+        if not record.get("evidence"):
+            errors.append(f"{record.get('identifier')}: promoted record has no exact evidence")
+        if not isinstance(subject, dict) or "PENDING_EXACT_CANDIDATE" in {
+            subject.get("commit"), subject.get("sha256")
+        }:
+            errors.append(f"{record.get('identifier')}: promoted record has unresolved identity")
+        for role in ("Referee", "Human Steward"):
+            review = by_role.get(role, {})
+            if (
+                review.get("status") != "approved"
+                or not review.get("evidence")
+                or review.get("reviewer") in {None, "pending"}
+                or review.get("session") in {None, "pending"}
+            ):
+                errors.append(f"{record.get('identifier')}: promotion lacks exact {role} authorization")
+        if by_role.get("Referee", {}).get("reviewer") == by_role.get("Human Steward", {}).get("reviewer"):
+            errors.append(f"{record.get('identifier')}: Referee and Human Steward must be distinct")
     return errors
 
 

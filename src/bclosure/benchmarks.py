@@ -3,6 +3,7 @@ from __future__ import annotations
 import platform
 import subprocess
 import sys
+import tracemalloc
 from dataclasses import asdict, dataclass
 from time import perf_counter
 from typing import Any
@@ -33,14 +34,20 @@ class BenchmarkResult:
     seconds_total: float
     seconds_per_apply: float
     output_norm: float
-    compilation_seconds: float
+    compilation_seconds: float | None
+    compilation_status: str
     parameter_count: int | None
     nonzero_count: int | None
     estimated_flops_per_apply: int | None
     storage_bytes: int | None
+    estimated_bytes_moved_per_apply: int
+    peak_python_memory_bytes: int
     operator_error: float | None
+    operator_error_status: str
     task_delta: float | None
+    task_delta_status: str
     break_even_horizon: int | None
+    break_even_status: str
     artifact_path: str | None
 
     def to_dict(self) -> dict[str, Any]:
@@ -72,16 +79,25 @@ def benchmark_operator(
     x = rng.standard_normal(operator.shape[1]).astype(operator.dtype)
     for _ in range(warmup):
         operator.matvec(x)
+    tracemalloc.start()
     start = perf_counter()
     y = x
     for _ in range(repetitions):
         y = operator.matvec(x)
     elapsed = perf_counter() - start
+    _, peak_memory = tracemalloc.get_traced_memory()
+    tracemalloc.stop()
     matrix = getattr(operator, "matrix", None)
     parameter_count = int(matrix.size) if isinstance(matrix, np.ndarray) else None
     nonzero_count = int(np.count_nonzero(matrix)) if isinstance(matrix, np.ndarray) else None
     storage_bytes = int(matrix.nbytes) if isinstance(matrix, np.ndarray) else None
-    flops = 2 * operator.shape[0] * operator.shape[1] if matrix is not None else None
+    if matrix is not None:
+        flops = 2 * operator.shape[0] * operator.shape[1]
+        bytes_moved = int(matrix.nbytes + x.nbytes + y.nbytes)
+    else:
+        depth = int(operator.metadata.get("depth", 1))
+        flops = 2 * operator.shape[1] * depth
+        bytes_moved = int(2 * (depth + 1) * (x.nbytes + y.nbytes))
     return BenchmarkResult(
         git_commit=commit,
         git_dirty=dirty,
@@ -101,13 +117,19 @@ def benchmark_operator(
         seconds_total=elapsed,
         seconds_per_apply=elapsed / repetitions,
         output_norm=float(np.linalg.norm(y)),
-        compilation_seconds=0.0,
+        compilation_seconds=None,
+        compilation_status="inapplicable: deterministic reference execution has no compile phase",
         parameter_count=parameter_count,
         nonzero_count=nonzero_count,
         estimated_flops_per_apply=flops,
         storage_bytes=storage_bytes,
+        estimated_bytes_moved_per_apply=bytes_moved,
+        peak_python_memory_bytes=peak_memory,
         operator_error=None,
+        operator_error_status="not asserted by timing benchmark; see closure evidence",
         task_delta=None,
+        task_delta_status="inapplicable: no downstream task is claimed",
         break_even_horizon=None,
+        break_even_status="inapplicable: no compiled candidate is compared",
         artifact_path=artifact_path.replace("\\", "/") if artifact_path else None,
     )

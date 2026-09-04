@@ -16,10 +16,10 @@ class DenseLinearOperator(LinearOperator):
     matrix: NDArray[Any]
 
     def __init__(self, matrix: Array, metadata: dict[str, Any] | None = None) -> None:
-        a = np.array(matrix, copy=True, order="C")
+        source = np.array(matrix, copy=True, order="C")
+        a = np.frombuffer(source.tobytes(order="C"), dtype=source.dtype).reshape(source.shape)
         if a.ndim != 2:
             raise ValueError("matrix must be two-dimensional")
-        a.setflags(write=False)
         object.__setattr__(self, "matrix", a)
         object.__setattr__(self, "shape", (int(a.shape[0]), int(a.shape[1])))
         object.__setattr__(self, "dtype", a.dtype)

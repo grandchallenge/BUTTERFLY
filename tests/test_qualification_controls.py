@@ -53,3 +53,5 @@ def test_dense_fingerprint_is_content_addressed_and_matrix_is_immutable() -> Non
     assert first.fingerprint() != DenseLinearOperator(first_matrix).fingerprint()
     with np.testing.assert_raises(ValueError):
         first.matrix[0, 0] = 7.0
+    with np.testing.assert_raises(ValueError):
+        first.matrix.setflags(write=True)

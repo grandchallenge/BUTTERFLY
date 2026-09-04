@@ -1,8 +1,8 @@
 [
   {
     "path": ".github/CODEOWNERS",
-    "bytes": 12,
-    "sha256": "30097584dbe300b52c3071ecf341e7ee88425b0f149ccd7bfa5076b517a735c1"
+    "bytes": 22,
+    "sha256": "5e2895d77e010b5d7ad29ef7a00a3c8b49cfcce96caf22000f46fa15d5ff77fd"
   },
   {
     "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -156,8 +156,8 @@
   },
   {
     "path": "ci/validate_governance.py",
-    "bytes": 5139,
-    "sha256": "e1e046a6feaaf30f3f78020c80ca121a507a79d4b7b24002dbe612c6fdaeb75c"
+    "bytes": 6614,
+    "sha256": "57be034dfbe6bd0a8675a9cec2fd29ae3f465f3e21c0b319aef324b98d0d4ae6"
   },
   {
     "path": "codex/00_INITIATOR.md",
@@ -336,8 +336,8 @@
   },
   {
     "path": "src/bclosure/benchmarks.py",
-    "bytes": 3436,
-    "sha256": "0247987ce70217c0b0dc62931a821f3709640076188bb39f067cdc3df82c6534"
+    "bytes": 4427,
+    "sha256": "86b4c42e6edb67b66877222a267550c2adcd96d6765e38f9cd137678c5cce1ed"
   },
   {
     "path": "src/bclosure/certification.py",
@@ -426,8 +426,8 @@
   },
   {
     "path": "src/bclosure/operators/dense.py",
-    "bytes": 1721,
-    "sha256": "e8f37fb709ed639456f86933a7a4a762ccce204d6317e4c4efa4e280cc8beef0"
+    "bytes": 1789,
+    "sha256": "9bdc32b2ba2bc7a7ebbe9dce52414df428610618c203fd2b213ef9b99f6b3b69"
   },
   {
     "path": "src/bclosure/probes/__init__.py",
@@ -481,8 +481,8 @@
   },
   {
     "path": "tests/test_governance.py",
-    "bytes": 1867,
-    "sha256": "36fccf418df850fd260157cc116a786d986218073e3077fc9eed354fe31a048c"
+    "bytes": 2826,
+    "sha256": "d509d2f362023b04a8b1cae95b6e0718e2e0989e49329f8871ec00a135029590"
   },
   {
     "path": "tests/test_hadamard.py",
@@ -501,8 +501,8 @@
   },
   {
     "path": "tests/test_qualification_controls.py",
-    "bytes": 2477,
-    "sha256": "c4913675399e82a988ca1afa4797c12cb4c1ad37204694b53b52ce7ddf477bd2"
+    "bytes": 2566,
+    "sha256": "2864df2bc2ce7abbaa9ab4b91ed13016d07c6ac0cb12ede3bf316fcceec358ab"
   },
   {
     "path": "tests/test_tree_ordering.py",
