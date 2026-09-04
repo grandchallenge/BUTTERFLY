@@ -15,14 +15,19 @@
     "sha256": "30a06588c8f40072fee20c9497cb6ffc0c1af3e46afc6e7c413c879c0636839d"
   },
   {
+    "path": ".github/dependabot.yml",
+    "bytes": 257,
+    "sha256": "c5d9cdc38cae054819e3ebc37071aafab3635a214628f6fa971fb74a87a9e3af"
+  },
+  {
     "path": ".github/pull_request_template.md",
     "bytes": 611,
     "sha256": "7e51b932cca591dc45cbed38d60ec1fe05841c96b49ba110395f408d856ebad8"
   },
   {
     "path": ".github/workflows/ci.yml",
-    "bytes": 2232,
-    "sha256": "224561d7ef1d0865a03ff5783d58945e3a1471118623c1e3c0d4a5f2e9a4961c"
+    "bytes": 2307,
+    "sha256": "2397986f3114b84e541ae7585562a67d57b8fd210c6c70f692b7047601e21fe5"
   },
   {
     "path": ".gitignore",
@@ -140,6 +145,11 @@
     "sha256": "a78fb99d01fd9f57686535d277e4de1a9dfacb690c8ae3b038a10837ee5df3e9"
   },
   {
+    "path": "ci/__init__.py",
+    "bytes": 54,
+    "sha256": "9e6115896d22cfee6f3d810199d90f289b6b9c5a1c6f067b5fca1753e69326ef"
+  },
+  {
     "path": "ci/validate_governance.py",
     "bytes": 3488,
     "sha256": "736dff13d532ee7dd43e0e13bdde3b5c20c1f17cd49941cab2b886ad2d24434c"
@@ -233,6 +243,11 @@
     "path": "docs/PROGRAMME_CHARTER.md",
     "bytes": 2369,
     "sha256": "b1c780739505508ce0ce072a437de53a77d1fcbe7999f2e49f070756339cc245"
+  },
+  {
+    "path": "docs/RELEASE_POLICY.md",
+    "bytes": 960,
+    "sha256": "2420b088bb2638ca0b5ffa113ea70d32309db2bb33ff5e09a0439bb95f52690b"
   },
   {
     "path": "docs/decisions/ADR-0001_STANDALONE_GCL_PROGRAMME.md",
