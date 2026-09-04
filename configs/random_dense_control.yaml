@@ -1,0 +1,16 @@
+name: random_dense_control_512
+operator:
+  kind: random_dense
+  size: 512
+  seed: 0
+inspection:
+  tolerance: 1.0e-3
+  rank_budget: 8
+  blocks_per_level: 8
+  oversampling: 8
+  seed: 0
+benchmark:
+  repetitions: 20
+  warmup: 5
+  seed: 0
+output_dir: artifacts

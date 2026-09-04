@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/grandchallenge/BUTTERFLY/schemas/institutional_record.schema.json",
+  "title": "BUTTERFLY institutional record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "record_class", "identifier", "status",
+    "authority_boundary", "subject", "evidence", "unresolved_obligations"
+  ],
+  "properties": {
+    "$schema": {"type": "string", "minLength": 1},
+    "schema_version": {"const": "1.0.0"},
+    "record_class": {
+      "enum": ["programme", "work_package", "evidence_manifest", "claim_ledger", "negative_knowledge", "review", "promotion"]
+    },
+    "identifier": {"type": "string", "pattern": "^BFC-[A-Z0-9-]+$"},
+    "status": {"enum": ["candidate", "pending", "blocked", "rejected", "superseded", "admitted", "promoted"]},
+    "authority_boundary": {"type": "string", "minLength": 40},
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "path", "commit", "sha256"],
+      "properties": {
+        "repository": {"const": "grandchallenge/BUTTERFLY"},
+        "path": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)[^\\\\]+$"},
+        "commit": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{40}$"}, {"const": "PENDING_EXACT_CANDIDATE"}]},
+        "sha256": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{64}$"}, {"const": "PENDING_EXACT_CANDIDATE"}]}
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim", "status", "boundary"],
+        "properties": {
+          "claim": {"type": "string", "minLength": 1},
+          "status": {"enum": ["candidate", "observed", "rejected", "withdrawn", "promoted"]},
+          "boundary": {"type": "string", "minLength": 20}
+        }
+      }
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "reviewer", "session", "status", "evidence"],
+        "properties": {
+          "role": {"enum": ["Axiomatist", "Cartographer", "Compiler", "Verifier", "Adversary", "Formalist", "Amanuensis", "Referee", "Human Steward"]},
+          "reviewer": {"type": "string", "minLength": 1},
+          "session": {"type": "string", "minLength": 1},
+          "status": {"enum": ["pending", "approved", "changes_requested", "blocked"]},
+          "evidence": {"type": "string"}
+        }
+      }
+    },
+    "supersedes": {"type": ["string", "null"]},
+    "reversal_conditions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "unresolved_obligations": {"type": "array", "items": {"type": "string", "minLength": 1}}
+  }
+}

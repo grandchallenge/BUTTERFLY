@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/institutional_record.schema.json",
+  "schema_version": "1.0.0",
+  "record_class": "evidence_manifest",
+  "identifier": "BFC-EVIDENCE-001",
+  "status": "candidate",
+  "authority_boundary": "Exact local qualification inventory only; evidence does not approve, admit, promote, certify, deploy, or authorize publication.",
+  "subject": {"repository": "grandchallenge/BUTTERFLY", "path": "artifacts/BFC-BASELINE-QUALIFICATION-001.json", "commit": "PENDING_EXACT_CANDIDATE", "sha256": "PENDING_EXACT_CANDIDATE"},
+  "evidence": [
+    "artifacts/synthetic_hadamard_1024.closure.json#a78fb99d01fd9f57686535d277e4de1a9dfacb690c8ae3b038a10837ee5df3e9",
+    "artifacts/global_low_rank_1024_r8.closure.json#e7e5d2b6cb5651aef951ad24ce7d4516f020d87b30c170a7808a26fae6ad7dd4",
+    "artifacts/random_dense_control_512.closure.json#e77538a1ac12e95a8583844974c959a9ecd7aa3ed8dfbee2d5c9c20a52851f9e"
+  ],
+  "unresolved_obligations": ["Exact candidate binding", "Hosted CI run and attempt identity", "Independent review"]
+}

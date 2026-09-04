@@ -1,0 +1,46 @@
+{
+  "identifier": "BFC-BASELINE-QUALIFICATION-001",
+  "status": "candidate_local_evidence",
+  "executed_at": "2026-09-04",
+  "subject_commit": "PENDING_EXACT_CANDIDATE",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": ["3.10.19", "3.12.10"],
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  },
+  "results": {
+    "python_3_10_pytest": "15 passed",
+    "python_3_12_pytest": "15 passed",
+    "ruff": "passed",
+    "mypy_strict": "passed",
+    "governance_validation": "passed",
+    "smoke": {
+      "synthetic_hadamard_1024": "accepted",
+      "global_low_rank_1024_r8": "accepted",
+      "random_dense_control_512": "rejected"
+    }
+  },
+  "commands": [
+    "python -m pip install --no-user -e .[dev]",
+    "python -m ruff check src tests ci",
+    "python -m mypy src",
+    "python ci/validate_governance.py",
+    "python -m pytest -q",
+    "python scripts/run_all_smoke.py"
+  ],
+  "artifact_sha256": {
+    "artifacts/synthetic_hadamard_1024.closure.json": "a78fb99d01fd9f57686535d277e4de1a9dfacb690c8ae3b038a10837ee5df3e9",
+    "artifacts/synthetic_hadamard_1024.benchmark.json": "38f3508366d175fc2194ce4d65504f2d85be122cff69ec2620e6ed48ce2fceb7",
+    "artifacts/global_low_rank_1024_r8.closure.json": "e7e5d2b6cb5651aef951ad24ce7d4516f020d87b30c170a7808a26fae6ad7dd4",
+    "artifacts/global_low_rank_1024_r8.benchmark.json": "5740d365c682e1874fa4d82ed73b9eb0b060287b4b9c24517f2def042b9fe96e",
+    "artifacts/random_dense_control_512.closure.json": "e77538a1ac12e95a8583844974c959a9ecd7aa3ed8dfbee2d5c9c20a52851f9e",
+    "artifacts/random_dense_control_512.benchmark.json": "6aba1ad67b5b6693673adf2e66e3c70639e1c11bf300758327f1c05b219c21f0"
+  },
+  "authority_boundary": "This is local candidate software evidence. It is not an independent review, protected CI result, scientific promotion, or MATHCERT certification.",
+  "unresolved_obligations": [
+    "Bind evidence to the committed onboarding candidate",
+    "Reproduce in protected GitHub Actions",
+    "Independent Adversary and Referee review"
+  ]
+}

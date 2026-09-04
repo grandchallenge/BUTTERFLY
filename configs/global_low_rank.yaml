@@ -1,0 +1,17 @@
+name: global_low_rank_1024_r8
+operator:
+  kind: global_low_rank
+  size: 1024
+  rank: 8
+  seed: 0
+inspection:
+  tolerance: 1.0e-6
+  rank_budget: 8
+  blocks_per_level: 8
+  oversampling: 4
+  seed: 0
+benchmark:
+  repetitions: 20
+  warmup: 5
+  seed: 0
+output_dir: artifacts

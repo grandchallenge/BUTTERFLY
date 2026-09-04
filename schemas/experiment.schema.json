@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Butterfly Closure Experiment",
+  "type": "object",
+  "required": ["name", "operator", "inspection", "benchmark"],
+  "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "operator": {"type": "object"},
+    "inspection": {
+      "type": "object",
+      "required": ["tolerance", "rank_budget"],
+      "properties": {
+        "tolerance": {"type": "number", "exclusiveMinimum": 0},
+        "rank_budget": {"type": "integer", "minimum": 1},
+        "blocks_per_level": {"type": ["integer", "null"], "minimum": 1},
+        "seed": {"type": "integer"}
+      }
+    },
+    "benchmark": {"type": "object"},
+    "output_dir": {"type": "string"}
+  }
+}
