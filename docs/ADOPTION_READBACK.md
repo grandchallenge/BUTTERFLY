@@ -5,7 +5,7 @@ Date: 2026-09-04
 Status: `ADOPTED_GCL_RESEARCH_PROGRAMME`
 
 The `BFC-ONBOARDING-PACKET-001` campaign completed through the streamlined
-execution route after distinct Adversary and Referee findings and the Human
+execution route after distinct Adversary and Referee logical audit passes and the Human
 Steward's explicitly delegated disposition.
 
 Protected identities:

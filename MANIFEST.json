@@ -21,8 +21,8 @@
   },
   {
     "path": ".github/pull_request_template.md",
-    "bytes": 611,
-    "sha256": "7e51b932cca591dc45cbed38d60ec1fe05841c96b49ba110395f408d856ebad8"
+    "bytes": 982,
+    "sha256": "bd96f545a81fa443c6dbb8abf8972a957ea24e54157f32f8786253d060feeeef"
   },
   {
     "path": ".github/workflows/ci.yml",
@@ -36,8 +36,8 @@
   },
   {
     "path": "AGENTS.md",
-    "bytes": 1285,
-    "sha256": "392b7c8808f5bf285e31c02fb928ed39291b447f06542ad9bd3a3b957003bc2d"
+    "bytes": 2617,
+    "sha256": "c77c4ea60d591ddd30492b137918afb90ae1208361c032b437ebf64426fe80f5"
   },
   {
     "path": "ARCHITECTURE.md",
@@ -56,13 +56,13 @@
   },
   {
     "path": "CONTRIBUTING.md",
-    "bytes": 421,
-    "sha256": "fc2586ff2d2dd34be52333681bf9d69f25e829bbc52a15bb594e54d09d86c221"
+    "bytes": 1275,
+    "sha256": "8151623a1686ce5997bb0ab568aaae3ecfe7bb97d2f09bffb071f17952b86605"
   },
   {
     "path": "GOVERNANCE.md",
-    "bytes": 1762,
-    "sha256": "0b5d03ceab71718c1128c3f029382bd512738de7d92e9f5d69368562a9650fc1"
+    "bytes": 2440,
+    "sha256": "03fdf36aaef67e9e22d657305261c398c083f9366c0a47fa67aeec1fc2190be7"
   },
   {
     "path": "METRICS.md",
@@ -156,8 +156,8 @@
   },
   {
     "path": "ci/validate_governance.py",
-    "bytes": 6614,
-    "sha256": "57be034dfbe6bd0a8675a9cec2fd29ae3f465f3e21c0b319aef324b98d0d4ae6"
+    "bytes": 6637,
+    "sha256": "5c23031d8ef0dcf3839d1bfd773738907f3918234db116338b73236f2cad3a98"
   },
   {
     "path": "codex/00_INITIATOR.md",
@@ -241,8 +241,8 @@
   },
   {
     "path": "docs/ADOPTION_READBACK.md",
-    "bytes": 1318,
-    "sha256": "aff543c4b983d3420a92ac3aa06f984b9133ffbf01ad89b86e6de9f740f7239d"
+    "bytes": 1330,
+    "sha256": "85ebdd82de9de51f6b1b9a89056902d49b1542d855e1c60c44ae917cc51e2145"
   },
   {
     "path": "docs/NUMERICAL_POLICY.md",
@@ -251,13 +251,18 @@
   },
   {
     "path": "docs/PROGRAMME_CHARTER.md",
-    "bytes": 2369,
-    "sha256": "b1c780739505508ce0ce072a437de53a77d1fcbe7999f2e49f070756339cc245"
+    "bytes": 2482,
+    "sha256": "56f3190a09fdb1e792fe01191034f1a18dc54bfcf334bc3dfd46498d42b587db"
   },
   {
     "path": "docs/RELEASE_POLICY.md",
     "bytes": 985,
     "sha256": "834b89d78a896511b1ab2e0ad86b7e5fd16f438fa2b470aa7d37e3b1e266c32d"
+  },
+  {
+    "path": "docs/STREAMLINED_ROLE_OPERATING_MODEL.md",
+    "bytes": 3906,
+    "sha256": "42e71518b7a831d6c51a88c4b0802f5be3d8fe2aa0577d55ec5dc3bba7b4b01d"
   },
   {
     "path": "docs/decisions/ADR-0001_STANDALONE_GCL_PROGRAMME.md",
@@ -268,6 +273,11 @@
     "path": "docs/decisions/ADR-0002_CONTENT_ADDRESSED_DENSE_OPERATORS.md",
     "bytes": 1251,
     "sha256": "5c418959cf257b7949afb107e61d3c641c2e998f237e5be3b4103ef3c162cb26"
+  },
+  {
+    "path": "docs/decisions/ADR-0003_STREAMLINED_MULTI_ROLE_AGENT_STAFFING.md",
+    "bytes": 3314,
+    "sha256": "43cbbabcb267b1fa6db83b5fe47fa9aad465ba838382ac9160b31370356f96cd"
   },
   {
     "path": "governance/example_agent_review.yaml",
@@ -486,8 +496,8 @@
   },
   {
     "path": "tests/test_governance.py",
-    "bytes": 2826,
-    "sha256": "d509d2f362023b04a8b1cae95b6e0718e2e0989e49329f8871ec00a135029590"
+    "bytes": 4009,
+    "sha256": "4aaddfc3db50303a72f9adf63f032125f73ffe38ba59d13848413217a347e85f"
   },
   {
     "path": "tests/test_hadamard.py",

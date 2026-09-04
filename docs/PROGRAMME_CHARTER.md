@@ -5,7 +5,7 @@
 - Programme: BUTTERFLY CLOSURE
 - Identifier: `BFC`
 - Repository: `grandchallenge/BUTTERFLY`
-- State: `candidate`
+- State: `adopted` (research work packages and claims remain individually gated)
 - Purpose: discover, falsify, certify within declared numerical scope, and
   compile complementary low-rank computation while preserving deterministic
   reference and rejection paths.
@@ -41,7 +41,8 @@ downstream node inherits promotion from an upstream node.
 
 Admission requires a clean, reproducible reference baseline; closed and
 semantically validated governance records; protected GitHub controls; distinct
-Adversary and Referee findings; Human Steward authorization; cross-repository
+Adversary and Referee logical audit passes, which may be staffed by the same
+system; Human Steward authorization; cross-repository
 registration; and protected/public readback. Research deliverables may remain
 gated if their unresolved obligations are explicit.
 

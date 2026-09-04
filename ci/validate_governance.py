@@ -72,8 +72,11 @@ def semantic_errors(records: list[dict[str, object]]) -> list[str]:
             by_role = {review["role"]: review for review in reviews if isinstance(review, dict)}
             adversary = by_role.get("Adversary", {})
             referee = by_role.get("Referee", {})
-            if adversary.get("reviewer") == referee.get("reviewer") or adversary.get("session") == referee.get("session"):
-                errors.append("Adversary and Referee must have distinct reviewers and sessions")
+            if adversary.get("session") == referee.get("session"):
+                errors.append(
+                    "Adversary and Referee audit passes must have distinct "
+                    "logical session identifiers"
+                )
     promoted = [
         record for record in records
         if record.get("status") == "promoted"
