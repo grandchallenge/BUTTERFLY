@@ -1,0 +1,49 @@
+{
+  "identifier": "BFC-REQUALIFICATION-002",
+  "status": "candidate_local_evidence",
+  "executed_at": "2026-09-04",
+  "subject_commit": "1873ef3e2dbe4f7a055b4162458b3d250150fb0c",
+  "subject_source_dirty": false,
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "python": ["3.10.19", "3.12.10"],
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  },
+  "results": {
+    "python_3_10_pytest": "17 passed",
+    "python_3_12_pytest": "17 passed",
+    "ruff": "passed",
+    "mypy_strict": "passed",
+    "governance_validation": "passed",
+    "smoke": {
+      "synthetic_hadamard_1024": "accepted",
+      "global_low_rank_1024_r8": "accepted",
+      "random_dense_control_512": "rejected"
+    }
+  },
+  "commands": [
+    "python -m pip install --no-user -e .[dev]",
+    "python -m ruff check src tests ci",
+    "python -m mypy src",
+    "python ci/validate_governance.py",
+    "python -m pytest -q",
+    "python scripts/run_all_smoke.py"
+  ],
+  "artifact_sha256": {
+    "artifacts/synthetic_hadamard_1024.closure.json": "a42b80b5e7652db2a1e9aa3926e7980cd10faf15d9eb0807986e5396fbc7f236",
+    "artifacts/synthetic_hadamard_1024.benchmark.json": "26158b828361cf32c8fd160e78d87fd9413c9b49685fbefcbb706440ccd64f84",
+    "artifacts/global_low_rank_1024_r8.closure.json": "6267b2a2c0ad2b8cedcbd0597750d2a43cf0aae70a047f8f728e465711ec743f",
+    "artifacts/global_low_rank_1024_r8.benchmark.json": "3ffbac7cd3b0f52e8f20da6e6de39622ec0d57b8822a59716de846a2d2944b51",
+    "artifacts/random_dense_control_512.closure.json": "ad89ce59211016ab289ad8ee2125d9400ccd70d90898e52dffd3ee1ef65a8107",
+    "artifacts/random_dense_control_512.benchmark.json": "d9820c1689ceaa46a165537423d927ba4cefdfe2baa4092f41dad5385c84658f"
+  },
+  "authority_boundary": "Candidate software evidence for the repaired deterministic reference baseline only. It is not admission, claim promotion, public authorization, or MATHCERT certification.",
+  "unresolved_obligations": [
+    "Reproduce the repaired candidate in protected GitHub Actions",
+    "Obtain fresh distinct-session Adversary and Referee findings",
+    "Obtain authenticated Human Steward exact-packet authorization"
+  ]
+}

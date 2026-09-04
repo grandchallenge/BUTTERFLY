@@ -1,8 +1,32 @@
 {
+  "git_commit": "1873ef3e2dbe4f7a055b4162458b3d250150fb0c",
+  "git_dirty": false,
+  "python_version": "3.12.10",
+  "numpy_version": "1.26.4",
+  "scipy_version": "1.13.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+  "operator_fingerprint": "sha256:332a69d767e47202effeae0a144705a96d3c7553d5c9b126a04a1bfa74481fa0",
+  "shape": [
+    1024,
+    1024
+  ],
+  "dtype": "<f8",
+  "seed": 0,
   "size": 1024,
   "repetitions": 20,
   "warmup": 5,
-  "seconds_total": 0.00504189997445792,
-  "seconds_per_apply": 0.00025209499872289596,
-  "output_norm": 1154.3826879149162
+  "seconds_total": 0.0027957999845966697,
+  "seconds_per_apply": 0.00013978999922983348,
+  "output_norm": 1154.3826879149162,
+  "compilation_seconds": 0.0,
+  "parameter_count": 1048576,
+  "nonzero_count": 1048576,
+  "estimated_flops_per_apply": 2097152,
+  "storage_bytes": 8388608,
+  "operator_error": null,
+  "task_delta": null,
+  "break_even_horizon": null,
+  "artifact_path": "artifacts/global_low_rank_1024_r8.benchmark.json"
 }

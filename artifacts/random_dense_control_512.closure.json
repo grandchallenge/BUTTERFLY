@@ -1,5 +1,5 @@
 {
-  "operator_fingerprint": "DenseLinearOperator:(512, 512):<f8:[('kind', 'random_dense'), ('seed', 0)]",
+  "operator_fingerprint": "sha256:3ec53041c9b5fb066b3193b5aa81c514f97192ebf78cd3c5f34d69cab339a17a",
   "tolerance": 0.001,
   "rank_budget": 8,
   "estimates": [

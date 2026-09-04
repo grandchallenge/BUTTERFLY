@@ -1,8 +1,32 @@
 {
+  "git_commit": "1873ef3e2dbe4f7a055b4162458b3d250150fb0c",
+  "git_dirty": false,
+  "python_version": "3.12.10",
+  "numpy_version": "1.26.4",
+  "scipy_version": "1.13.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+  "operator_fingerprint": "sha256:3ec53041c9b5fb066b3193b5aa81c514f97192ebf78cd3c5f34d69cab339a17a",
+  "shape": [
+    512,
+    512
+  ],
+  "dtype": "<f8",
+  "seed": 0,
   "size": 512,
   "repetitions": 20,
   "warmup": 5,
-  "seconds_total": 0.004038600018247962,
-  "seconds_per_apply": 0.0002019300009123981,
-  "output_norm": 32.89911880924533
+  "seconds_total": 0.0021986999781802297,
+  "seconds_per_apply": 0.00010993499890901148,
+  "output_norm": 32.89911880924533,
+  "compilation_seconds": 0.0,
+  "parameter_count": 262144,
+  "nonzero_count": 262144,
+  "estimated_flops_per_apply": 524288,
+  "storage_bytes": 2097152,
+  "operator_error": null,
+  "task_delta": null,
+  "break_even_horizon": null,
+  "artifact_path": "artifacts/random_dense_control_512.benchmark.json"
 }

@@ -1,8 +1,32 @@
 {
+  "git_commit": "1873ef3e2dbe4f7a055b4162458b3d250150fb0c",
+  "git_dirty": false,
+  "python_version": "3.12.10",
+  "numpy_version": "1.26.4",
+  "scipy_version": "1.13.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+  "operator_fingerprint": "HadamardButterflyOperator:(1024, 1024):<f8:[('depth', 10), ('normalized', True)]",
+  "shape": [
+    1024,
+    1024
+  ],
+  "dtype": "<f8",
+  "seed": 0,
   "size": 1024,
   "repetitions": 100,
   "warmup": 10,
-  "seconds_total": 0.01151370001025498,
-  "seconds_per_apply": 0.0001151370001025498,
-  "output_norm": 31.139468020815205
+  "seconds_total": 0.0077624000841751695,
+  "seconds_per_apply": 7.762400084175169e-05,
+  "output_norm": 31.139468020815205,
+  "compilation_seconds": 0.0,
+  "parameter_count": null,
+  "nonzero_count": null,
+  "estimated_flops_per_apply": null,
+  "storage_bytes": null,
+  "operator_error": null,
+  "task_delta": null,
+  "break_even_horizon": null,
+  "artifact_path": "artifacts/synthetic_hadamard_1024.benchmark.json"
 }

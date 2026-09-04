@@ -1,5 +1,5 @@
 {
-  "operator_fingerprint": "DenseLinearOperator:(1024, 1024):<f8:[('kind', 'global_low_rank')]",
+  "operator_fingerprint": "sha256:332a69d767e47202effeae0a144705a96d3c7553d5c9b126a04a1bfa74481fa0",
   "tolerance": 1e-06,
   "rank_budget": 8,
   "estimates": [
