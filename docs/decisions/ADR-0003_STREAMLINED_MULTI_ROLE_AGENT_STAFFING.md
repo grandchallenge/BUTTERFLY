@@ -5,6 +5,11 @@
 - Decision authority: Human Steward direction in the onboarding task
 - Scope: BUTTERFLY programme implementation, audit, review, and integration
 
+This ADR is implemented through, and is subordinate to, the canonical
+`GCL-AGENT-STAFFING-001` v1.0.0 contract adopted in
+`governance/GCL-AGENT-STAFFING-001-ADOPTION.json`. If wording differs, the
+canonical standard and currently selected INTELLECT authority schedule control.
+
 ## Context
 
 Earlier onboarding language mixed two different safeguards: separation of
@@ -54,6 +59,8 @@ commercial, novelty, priority, or other excluded authority.
 ## Consequences
 
 - Future agents receive the license and its limits directly from `AGENTS.md`.
+- Historical evidence remains immutable; prospective obligations use the
+  canonical logical-pass vocabulary described in the documentary coverage note.
 - Routine changes can complete autonomously through protected controls.
 - Audit independence is inspectable in the record rather than inferred from a
   count of identities or approvals.

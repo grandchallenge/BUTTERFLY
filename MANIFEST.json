@@ -245,6 +245,11 @@
     "sha256": "85ebdd82de9de51f6b1b9a89056902d49b1542d855e1c60c44ae917cc51e2145"
   },
   {
+    "path": "docs/GCL-AGENT-STAFFING-001-DOCUMENTARY-COVERAGE.md",
+    "bytes": 1557,
+    "sha256": "0ef2dcc3b4ed609964b4f9cd2063529b77abb13933fa24b5378b187aa17a17c3"
+  },
+  {
     "path": "docs/NUMERICAL_POLICY.md",
     "bytes": 690,
     "sha256": "8d8a2f55ba732fdeb4c6ee4c2f5843aae437910fd4065ae8d2f2a40514b59721"
@@ -276,8 +281,8 @@
   },
   {
     "path": "docs/decisions/ADR-0003_STREAMLINED_MULTI_ROLE_AGENT_STAFFING.md",
-    "bytes": 3314,
-    "sha256": "43cbbabcb267b1fa6db83b5fe47fa9aad465ba838382ac9160b31370356f96cd"
+    "bytes": 3745,
+    "sha256": "4a61c16dca731e8e609710e07800b19084af35a46372e3fa0a62bc26070b0c70"
   },
   {
     "path": "governance/GCL-AGENT-STAFFING-001-ADOPTION.json",
