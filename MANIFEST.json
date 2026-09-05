@@ -1,5 +1,10 @@
 [
   {
+    "path": ".ghos-routing/workflows.json",
+    "bytes": 1468,
+    "sha256": "176dcc3ae4cf084671397ceafa9c6b84aa9fbb7df254a0e7d693d624d1062468"
+  },
+  {
     "path": ".github/CODEOWNERS",
     "bytes": 22,
     "sha256": "5e2895d77e010b5d7ad29ef7a00a3c8b49cfcce96caf22000f46fa15d5ff77fd"
@@ -28,6 +33,11 @@
     "path": ".github/workflows/ci.yml",
     "bytes": 2317,
     "sha256": "58c0e7927b4963856b7f04560d47f2e5a80db7e53c7670722959f2f062b12931"
+  },
+  {
+    "path": ".github/workflows/ghos-routing-enforcement.yml",
+    "bytes": 2158,
+    "sha256": "05615a2bd235eefb982c200113c47c49b42bedb5589e2b4737ae27f5eba1437d"
   },
   {
     "path": ".gitignore",
