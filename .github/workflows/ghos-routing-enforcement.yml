@@ -1,0 +1,56 @@
+name: GH-OS routing enforcement
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ghos-routing-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  routing-enforcement:
+    name: routing-enforcement
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out protected base
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: protected-base
+          persist-credentials: false
+      - name: Check out candidate read-only
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: candidate
+          persist-credentials: false
+      - name: Reject enforcement self-modification
+        shell: bash
+        run: |
+          cmp --silent \
+            protected-base/.github/workflows/ghos-routing-enforcement.yml \
+            candidate/.github/workflows/ghos-routing-enforcement.yml || {
+              echo "GH-OS routing enforcement workflow may not be changed through an ordinary candidate PR"
+              exit 1
+            }
+      - name: Check out governed shared routing gate
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: grandchallenge/.github
+          ref: e74f334c5a589e968a7676a0942c5a002f140f18
+          path: policy-runtime
+          persist-credentials: false
+      - name: Install routing gate dependency
+        run: python -m pip install PyYAML==6.0.3
+      - name: Verify and execute external gate
+        shell: bash
+        run: |
+          echo "fc0a9a4d20de72e9fbc04c8cd54cffc3a6e4657fb09e7978b360616bd5e94a17  policy-runtime/scripts/ghos_execution_routing_gate.py" | sha256sum --check --strict
+          python -c 'import runpy,sys; runpy.run_path(sys.argv.pop(1), run_name="__main__")' policy-runtime/scripts/ghos_execution_routing_gate.py \
+            --root candidate \
+            --repository "$GITHUB_REPOSITORY"
