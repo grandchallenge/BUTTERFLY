@@ -28,8 +28,10 @@ checks, and read back by the system under standing or exact delegation without
 a Human Steward click or blanket office approvals. Human judgment is requested
 only for a decision explicitly reserved to the Human Steward or another human
 authority. Automation may record and mechanically execute such a decision, but
-must not invent it. The normative classification and staffing rules are in
-`docs/STREAMLINED_ROLE_OPERATING_MODEL.md`.
+must not invent it. Normative classification and staffing follow canonical
+`GCL-AGENT-STAFFING-001` version `1.0.0` at gcl-standards commit
+`94e94ddf2d4158494c084d0acaff04009971c16c`. The local operating model is
+implementation commentary and may not override that canonical contract.
 
 ## Required implementation sequence
 
