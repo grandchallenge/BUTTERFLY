@@ -54,3 +54,5 @@ jobs:
           python -c 'import runpy,sys; runpy.run_path(sys.argv.pop(1), run_name="__main__")' policy-runtime/scripts/ghos_execution_routing_gate.py \
             --root candidate \
             --repository "$GITHUB_REPOSITORY"
+
+# HOSTILE_PROBE_ONLY: ordinary candidate self-modification must be rejected.
