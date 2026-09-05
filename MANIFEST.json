@@ -36,8 +36,8 @@
   },
   {
     "path": "AGENTS.md",
-    "bytes": 2617,
-    "sha256": "c77c4ea60d591ddd30492b137918afb90ae1208361c032b437ebf64426fe80f5"
+    "bytes": 2783,
+    "sha256": "1ac3b8b7b4b8646b20f256bb72f46228dd1cb98e0bfcaa29bc2149773a7e5698"
   },
   {
     "path": "ARCHITECTURE.md",
@@ -278,6 +278,11 @@
     "path": "docs/decisions/ADR-0003_STREAMLINED_MULTI_ROLE_AGENT_STAFFING.md",
     "bytes": 3314,
     "sha256": "43cbbabcb267b1fa6db83b5fe47fa9aad465ba838382ac9160b31370356f96cd"
+  },
+  {
+    "path": "governance/GCL-AGENT-STAFFING-001-ADOPTION.json",
+    "bytes": 781,
+    "sha256": "973fcee53292b417f0dba468529f7ea65252a2c1e08885ff99d1f9850f4fe3d1"
   },
   {
     "path": "governance/example_agent_review.yaml",
