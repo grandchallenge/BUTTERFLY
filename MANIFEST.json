@@ -32,7 +32,7 @@
   {
     "path": ".github/workflows/ci.yml",
     "bytes": 2317,
-    "sha256": "58c0e7927b4963856b7f04560d47f2e5a80db7e53c7670722959f2f062b12931"
+    "sha256": "e1a73cf5a9ba712976b2bf89a31e7475f29062d60b755c0391aea78dc413fdac"
   },
   {
     "path": ".github/workflows/ghos-routing-enforcement.yml",
@@ -337,7 +337,7 @@
   {
     "path": "pyproject.toml",
     "bytes": 951,
-    "sha256": "c929682046e75de966af6e3bc013b15c9e3c07beee0bc885436f532bf22892f5"
+    "sha256": "15fd78d1643931f47985d3ef27ae20b6c1ce7be2c432a8025a5a78796580dcf9"
   },
   {
     "path": "schemas/agent_review.schema.json",
