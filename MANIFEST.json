@@ -411,8 +411,8 @@
   },
   {
     "path": "src/bclosure/factorization/factor_chain.py",
-    "bytes": 1975,
-    "sha256": "be6a982537d8738681c6d0e514e0b1ad49f116708aee64fc90f53b51a347918d"
+    "bytes": 1980,
+    "sha256": "a8fd6f3a5cf91c080860a4658782e35f002b522e2b425aad530979199374c597"
   },
   {
     "path": "src/bclosure/factorization/hadamard.py",
@@ -461,8 +461,8 @@
   },
   {
     "path": "src/bclosure/operators/dense.py",
-    "bytes": 1806,
-    "sha256": "c6a7105a6a6224c10c4badf52c4a2349947e860b2bda2f1d269e78ee8b70c256"
+    "bytes": 1845,
+    "sha256": "8f8a9f6f6b125faa8be49ea1c7cbee11c7ab0d6683f5770e1bb03feb18bd2ebf"
   },
   {
     "path": "src/bclosure/probes/__init__.py",
