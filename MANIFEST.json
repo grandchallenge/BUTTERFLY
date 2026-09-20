@@ -32,7 +32,7 @@
   {
     "path": ".github/workflows/ci.yml",
     "bytes": 2317,
-    "sha256": "58c0e7927b4963856b7f04560d47f2e5a80db7e53c7670722959f2f062b12931"
+    "sha256": "e1a73cf5a9ba712976b2bf89a31e7475f29062d60b755c0391aea78dc413fdac"
   },
   {
     "path": ".github/workflows/ghos-routing-enforcement.yml",
@@ -337,7 +337,7 @@
   {
     "path": "pyproject.toml",
     "bytes": 951,
-    "sha256": "c929682046e75de966af6e3bc013b15c9e3c07beee0bc885436f532bf22892f5"
+    "sha256": "15fd78d1643931f47985d3ef27ae20b6c1ce7be2c432a8025a5a78796580dcf9"
   },
   {
     "path": "schemas/agent_review.schema.json",
@@ -411,8 +411,8 @@
   },
   {
     "path": "src/bclosure/factorization/factor_chain.py",
-    "bytes": 1956,
-    "sha256": "53e994ab0f11cac7b0039f7c61ee8b186dad9789a4049d57454bbce53e4a24b3"
+    "bytes": 1980,
+    "sha256": "a8fd6f3a5cf91c080860a4658782e35f002b522e2b425aad530979199374c597"
   },
   {
     "path": "src/bclosure/factorization/hadamard.py",
@@ -461,8 +461,8 @@
   },
   {
     "path": "src/bclosure/operators/dense.py",
-    "bytes": 1789,
-    "sha256": "9bdc32b2ba2bc7a7ebbe9dce52414df428610618c203fd2b213ef9b99f6b3b69"
+    "bytes": 1845,
+    "sha256": "8f8a9f6f6b125faa8be49ea1c7cbee11c7ab0d6683f5770e1bb03feb18bd2ebf"
   },
   {
     "path": "src/bclosure/probes/__init__.py",
@@ -471,8 +471,8 @@
   },
   {
     "path": "src/bclosure/probes/randomized.py",
-    "bytes": 2856,
-    "sha256": "eb7954abd2d8fe3d6675ad1496d11c370071f56f7076247c5f57f8939a9c0796"
+    "bytes": 2830,
+    "sha256": "f30a831ca884119b2282b0155c730c816f192737fae69e66f41960af5b9888fe"
   },
   {
     "path": "src/bclosure/trees/__init__.py",

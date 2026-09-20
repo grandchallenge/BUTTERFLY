@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any, cast
+from typing import Any
 
 import numpy as np
 from numpy.typing import NDArray
@@ -25,7 +25,7 @@ def _materialize_block(
 ) -> NDArray[Any]:
     explicit = getattr(operator, "matrix", None)
     if explicit is not None:
-        return cast(NDArray[Any], np.asarray(explicit)[np.ix_(rows, cols)])
+        return np.asarray(explicit)[np.ix_(rows, cols)]
     basis = np.zeros((operator.shape[1], len(cols)), dtype=operator.dtype)
     basis[cols, np.arange(len(cols))] = 1
     return operator.matmat(basis)[rows, :]

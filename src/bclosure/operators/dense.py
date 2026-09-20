@@ -20,8 +20,10 @@ class DenseLinearOperator(LinearOperator):
         a = np.frombuffer(source.tobytes(order="C"), dtype=source.dtype).reshape(source.shape)
         if a.ndim != 2:
             raise ValueError("matrix must be two-dimensional")
+        rows = int(np.size(a, axis=0))
+        cols = int(np.size(a, axis=1))
         object.__setattr__(self, "matrix", a)
-        object.__setattr__(self, "shape", (int(a.shape[0]), int(a.shape[1])))
+        object.__setattr__(self, "shape", (rows, cols))
         object.__setattr__(self, "dtype", a.dtype)
         object.__setattr__(self, "metadata", metadata or {})
         LinearOperator.__post_init__(self)

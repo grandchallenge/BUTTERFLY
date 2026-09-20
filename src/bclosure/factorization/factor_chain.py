@@ -24,10 +24,10 @@ class DenseFactor:
         return int(self.matrix.shape[0]), int(self.matrix.shape[1])
 
     def forward(self, x: Array) -> Array:
-        return self.matrix @ x
+        return np.asarray(self.matrix @ x)
 
     def adjoint(self, x: Array) -> Array:
-        return self.matrix.conj().T @ x
+        return np.asarray(self.matrix.conj().T @ x)
 
 
 @dataclass(frozen=True, init=False)
