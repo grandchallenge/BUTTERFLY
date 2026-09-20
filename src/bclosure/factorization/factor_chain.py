@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any
+from typing import Any, cast
 
 import numpy as np
 from numpy.typing import NDArray
@@ -24,7 +24,7 @@ class DenseFactor:
         return int(self.matrix.shape[0]), int(self.matrix.shape[1])
 
     def forward(self, x: Array) -> Array:
-        return self.matrix @ x
+        return cast(Array, self.matrix @ x)
 
     def adjoint(self, x: Array) -> Array:
         return self.matrix.conj().T @ x
