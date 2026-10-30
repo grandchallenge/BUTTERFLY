@@ -32,7 +32,7 @@
   {
     "path": ".github/workflows/ci.yml",
     "bytes": 2317,
-    "sha256": "b54eb156a21c690c93b62575761a24d0c3541343064c7c447523899fd74c524b"
+    "sha256": "60252c8f8f8011d07b1de562d4be5c18a994efbbee2fe2074b4b1088101294f8"
   },
   {
     "path": ".github/workflows/ghos-routing-enforcement.yml",
