@@ -1,0 +1,26 @@
+{
+  "contract_id": "GCL-CIR-001",
+  "version": "1.0.0",
+  "repository": "grandchallenge/BUTTERFLY",
+  "mode": "ENFORCE_DISCOVERY_PRESERVE_EXISTING_CI",
+  "checks": [
+    {
+      "id": "butterfly-quality-pytest",
+      "test_globs": [
+        "tests/test_*.py"
+      ]
+    }
+  ],
+  "legacy_test_paths": [
+    "tests/test_adjoint.py",
+    "tests/test_certification.py",
+    "tests/test_config.py",
+    "tests/test_factor_chain.py",
+    "tests/test_governance.py",
+    "tests/test_hadamard.py",
+    "tests/test_inspection.py",
+    "tests/test_krylov.py",
+    "tests/test_qualification_controls.py",
+    "tests/test_tree_ordering.py"
+  ]
+}
