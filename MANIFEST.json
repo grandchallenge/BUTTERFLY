@@ -10,6 +10,11 @@
     "sha256": "5e2895d77e010b5d7ad29ef7a00a3c8b49cfcce96caf22000f46fa15d5ff77fd"
   },
   {
+    "path": ".github/dependabot.yml",
+    "bytes": 257,
+    "sha256": "c5d9cdc38cae054819e3ebc37071aafab3635a214628f6fa971fb74a87a9e3af"
+  },
+  {
     "path": ".github/ISSUE_TEMPLATE/config.yml",
     "bytes": 199,
     "sha256": "9e388bbf849e84c8363351a2ef07af04179fcefdd0084b0ea5ce595180ce2868"
@@ -18,11 +23,6 @@
     "path": ".github/ISSUE_TEMPLATE/work-package.yml",
     "bytes": 1217,
     "sha256": "30a06588c8f40072fee20c9497cb6ffc0c1af3e46afc6e7c413c879c0636839d"
-  },
-  {
-    "path": ".github/dependabot.yml",
-    "bytes": 257,
-    "sha256": "c5d9cdc38cae054819e3ebc37071aafab3635a214628f6fa971fb74a87a9e3af"
   },
   {
     "path": ".github/pull_request_template.md",
@@ -53,66 +53,6 @@
     "path": "ARCHITECTURE.md",
     "bytes": 2138,
     "sha256": "4bde6743588b8ddb93c9658dd560a6848a1396d2f70652fac510ef54759caeae"
-  },
-  {
-    "path": "BOOTSTRAP.md",
-    "bytes": 711,
-    "sha256": "e8dfa7c6bdd193e2ab88b6fbe24d7b71c9302f77227f851852b4f0a365fdde41"
-  },
-  {
-    "path": "CONTRACTS.md",
-    "bytes": 1841,
-    "sha256": "8a1d016439b8a0ff79a261db65da434a0c805ce712e38bdf64ad5a106f25237a"
-  },
-  {
-    "path": "CONTRIBUTING.md",
-    "bytes": 1275,
-    "sha256": "8151623a1686ce5997bb0ab568aaae3ecfe7bb97d2f09bffb071f17952b86605"
-  },
-  {
-    "path": "GOVERNANCE.md",
-    "bytes": 2440,
-    "sha256": "03fdf36aaef67e9e22d657305261c398c083f9366c0a47fa67aeec1fc2190be7"
-  },
-  {
-    "path": "METRICS.md",
-    "bytes": 1302,
-    "sha256": "8c698caf8bfd8c3a85428b4dfbbdd3df6be96e1b944cb4a590411e248d9a9d8c"
-  },
-  {
-    "path": "Makefile",
-    "bytes": 346,
-    "sha256": "be94aaa76f1a921fa3f0a91166e395ff7cbdebc5bebe8b1193a48286194455e0"
-  },
-  {
-    "path": "PROGRAMME_SPEC.md",
-    "bytes": 2633,
-    "sha256": "f1f400523fd9700bed3ae6a8c7510385ace2eb46ac5957dc927a3b7e1c982e82"
-  },
-  {
-    "path": "README.md",
-    "bytes": 2770,
-    "sha256": "7b11b9d7610307a443156296ba87c24813a2bc1492d9e69b78935c2b2eee3e0d"
-  },
-  {
-    "path": "RUN_MATRIX.md",
-    "bytes": 1776,
-    "sha256": "2f8feb9b8a9c950b4d3f9786c0b7a4b1c90a641c1f710ef28f8a02151739315a"
-  },
-  {
-    "path": "SECURITY.md",
-    "bytes": 430,
-    "sha256": "5a85685a28fc9a962654dbae8c913d33f3304be631b28ac1e2655072715deac2"
-  },
-  {
-    "path": "VALIDATION.md",
-    "bytes": 1958,
-    "sha256": "647baa2ecce5e162e8964e2e642d5d8add670d51cfb9f7d6c567a67dbabfc6ca"
-  },
-  {
-    "path": "WORK_BREAKDOWN.md",
-    "bytes": 2060,
-    "sha256": "ff87ef7120a4ff8f2ee56813332b80773e464a01d1e11f4f975ba6b27210d3ea"
   },
   {
     "path": "artifacts/.gitkeep",
@@ -160,9 +100,19 @@
     "sha256": "a42b80b5e7652db2a1e9aa3926e7980cd10faf15d9eb0807986e5396fbc7f236"
   },
   {
+    "path": "BOOTSTRAP.md",
+    "bytes": 711,
+    "sha256": "e8dfa7c6bdd193e2ab88b6fbe24d7b71c9302f77227f851852b4f0a365fdde41"
+  },
+  {
     "path": "ci/__init__.py",
     "bytes": 54,
     "sha256": "9e6115896d22cfee6f3d810199d90f289b6b9c5a1c6f067b5fca1753e69326ef"
+  },
+  {
+    "path": "ci/gcl_component_routing.py",
+    "bytes": 10527,
+    "sha256": "883672ce7d3a8ac8abe026386840bf66a26655d7b319fad9746b0d83254c71c1"
   },
   {
     "path": "ci/validate_governance.py",
@@ -250,9 +200,34 @@
     "sha256": "ef706463bf269cc1a895dddfeb0875e50bd36448d739180e2a3f9f474f890bec"
   },
   {
+    "path": "CONTRACTS.md",
+    "bytes": 1841,
+    "sha256": "8a1d016439b8a0ff79a261db65da434a0c805ce712e38bdf64ad5a106f25237a"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "bytes": 1275,
+    "sha256": "8151623a1686ce5997bb0ab568aaae3ecfe7bb97d2f09bffb071f17952b86605"
+  },
+  {
     "path": "docs/ADOPTION_READBACK.md",
     "bytes": 1330,
     "sha256": "85ebdd82de9de51f6b1b9a89056902d49b1542d855e1c60c44ae917cc51e2145"
+  },
+  {
+    "path": "docs/decisions/ADR-0001_STANDALONE_GCL_PROGRAMME.md",
+    "bytes": 1567,
+    "sha256": "1e7588fd5f8bcdb12e787369a39a3767579da38f41fb03552b6ae33dcd5426fd"
+  },
+  {
+    "path": "docs/decisions/ADR-0002_CONTENT_ADDRESSED_DENSE_OPERATORS.md",
+    "bytes": 1251,
+    "sha256": "5c418959cf257b7949afb107e61d3c641c2e998f237e5be3b4103ef3c162cb26"
+  },
+  {
+    "path": "docs/decisions/ADR-0003_STREAMLINED_MULTI_ROLE_AGENT_STAFFING.md",
+    "bytes": 3745,
+    "sha256": "4a61c16dca731e8e609710e07800b19084af35a46372e3fa0a62bc26070b0c70"
   },
   {
     "path": "docs/GCL-AGENT-STAFFING-001-DOCUMENTARY-COVERAGE.md",
@@ -280,29 +255,29 @@
     "sha256": "42e71518b7a831d6c51a88c4b0802f5be3d8fe2aa0577d55ec5dc3bba7b4b01d"
   },
   {
-    "path": "docs/decisions/ADR-0001_STANDALONE_GCL_PROGRAMME.md",
-    "bytes": 1567,
-    "sha256": "1e7588fd5f8bcdb12e787369a39a3767579da38f41fb03552b6ae33dcd5426fd"
+    "path": "GOVERNANCE.md",
+    "bytes": 2440,
+    "sha256": "03fdf36aaef67e9e22d657305261c398c083f9366c0a47fa67aeec1fc2190be7"
   },
   {
-    "path": "docs/decisions/ADR-0002_CONTENT_ADDRESSED_DENSE_OPERATORS.md",
-    "bytes": 1251,
-    "sha256": "5c418959cf257b7949afb107e61d3c641c2e998f237e5be3b4103ef3c162cb26"
+    "path": "governance/ci_components/ci_routing.json",
+    "bytes": 360,
+    "sha256": "93602af409d625cec758446933ce63ffa5028bddf8eb57fb8e2bbd65eb3326ce"
   },
   {
-    "path": "docs/decisions/ADR-0003_STREAMLINED_MULTI_ROLE_AGENT_STAFFING.md",
-    "bytes": 3745,
-    "sha256": "4a61c16dca731e8e609710e07800b19084af35a46372e3fa0a62bc26070b0c70"
-  },
-  {
-    "path": "governance/GCL-AGENT-STAFFING-001-ADOPTION.json",
-    "bytes": 781,
-    "sha256": "973fcee53292b417f0dba468529f7ea65252a2c1e08885ff99d1f9850f4fe3d1"
+    "path": "governance/ci_routing_baseline.json",
+    "bytes": 636,
+    "sha256": "c679f4bd7e270a9b539ad465f5e79dd2c93a771cb3329eae6cc38d2671af533f"
   },
   {
     "path": "governance/example_agent_review.yaml",
     "bytes": 620,
     "sha256": "6e7feaac2425a3491ff4379fb795191cd840ad783ab820d679a4ac56a907e32c"
+  },
+  {
+    "path": "governance/GCL-AGENT-STAFFING-001-ADOPTION.json",
+    "bytes": 781,
+    "sha256": "973fcee53292b417f0dba468529f7ea65252a2c1e08885ff99d1f9850f4fe3d1"
   },
   {
     "path": "governance/records/BFC-ADMISSION-001.json",
@@ -335,9 +310,34 @@
     "sha256": "7eef155ae3d5dcb695c0805ed983dad1d51dc134a5ccfad1549bdbc1c25453cf"
   },
   {
+    "path": "Makefile",
+    "bytes": 346,
+    "sha256": "be94aaa76f1a921fa3f0a91166e395ff7cbdebc5bebe8b1193a48286194455e0"
+  },
+  {
+    "path": "METRICS.md",
+    "bytes": 1302,
+    "sha256": "8c698caf8bfd8c3a85428b4dfbbdd3df6be96e1b944cb4a590411e248d9a9d8c"
+  },
+  {
+    "path": "PROGRAMME_SPEC.md",
+    "bytes": 2633,
+    "sha256": "f1f400523fd9700bed3ae6a8c7510385ace2eb46ac5957dc927a3b7e1c982e82"
+  },
+  {
     "path": "pyproject.toml",
     "bytes": 951,
     "sha256": "15fd78d1643931f47985d3ef27ae20b6c1ce7be2c432a8025a5a78796580dcf9"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2770,
+    "sha256": "7b11b9d7610307a443156296ba87c24813a2bc1492d9e69b78935c2b2eee3e0d"
+  },
+  {
+    "path": "RUN_MATRIX.md",
+    "bytes": 1776,
+    "sha256": "2f8feb9b8a9c950b4d3f9786c0b7a4b1c90a641c1f710ef28f8a02151739315a"
   },
   {
     "path": "schemas/agent_review.schema.json",
@@ -363,6 +363,11 @@
     "path": "scripts/run_all_smoke.py",
     "bytes": 378,
     "sha256": "7befdff0a00188601f49ec7c7da2f893b2012d3cfac2dffcd0072e34805d2501"
+  },
+  {
+    "path": "SECURITY.md",
+    "bytes": 430,
+    "sha256": "5a85685a28fc9a962654dbae8c913d33f3304be631b28ac1e2655072715deac2"
   },
   {
     "path": "src/bclosure/__init__.py",
@@ -515,6 +520,11 @@
     "sha256": "f78069264069e0d949872fab69501e56ab3d06ebfba89b11a33fd6556032071f"
   },
   {
+    "path": "tests/test_gcl_component_routing.py",
+    "bytes": 5798,
+    "sha256": "5ff0d278c4dce2d1e2d5104304b012a572124514b4c8921d640a9972a8ae7910"
+  },
+  {
     "path": "tests/test_governance.py",
     "bytes": 4009,
     "sha256": "4aaddfc3db50303a72f9adf63f032125f73ffe38ba59d13848413217a347e85f"
@@ -543,5 +553,15 @@
     "path": "tests/test_tree_ordering.py",
     "bytes": 585,
     "sha256": "6287756dd08bcd11f9261c7a1b0d2431caa812805eb09566cf24a5417f8cce46"
+  },
+  {
+    "path": "VALIDATION.md",
+    "bytes": 1958,
+    "sha256": "647baa2ecce5e162e8964e2e642d5d8add670d51cfb9f7d6c567a67dbabfc6ca"
+  },
+  {
+    "path": "WORK_BREAKDOWN.md",
+    "bytes": 2060,
+    "sha256": "ff87ef7120a4ff8f2ee56813332b80773e464a01d1e11f4f975ba6b27210d3ea"
   }
 ]
