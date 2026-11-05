@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """GCL-CIR-001 portable, fail-closed component ownership and CI routing guard.
 
 This controller does not alter GitHub branch protection or replace any
