@@ -165,6 +165,11 @@
     "sha256": "9e6115896d22cfee6f3d810199d90f289b6b9c5a1c6f067b5fca1753e69326ef"
   },
   {
+    "path": "ci/gcl_component_routing.py",
+    "bytes": 10527,
+    "sha256": "883672ce7d3a8ac8abe026386840bf66a26655d7b319fad9746b0d83254c71c1"
+  },
+  {
     "path": "ci/validate_governance.py",
     "bytes": 6637,
     "sha256": "5c23031d8ef0dcf3839d1bfd773738907f3918234db116338b73236f2cad3a98"
@@ -298,6 +303,16 @@
     "path": "governance/GCL-AGENT-STAFFING-001-ADOPTION.json",
     "bytes": 781,
     "sha256": "973fcee53292b417f0dba468529f7ea65252a2c1e08885ff99d1f9850f4fe3d1"
+  },
+  {
+    "path": "governance/ci_components/ci_routing.json",
+    "bytes": 360,
+    "sha256": "93602af409d625cec758446933ce63ffa5028bddf8eb57fb8e2bbd65eb3326ce"
+  },
+  {
+    "path": "governance/ci_routing_baseline.json",
+    "bytes": 636,
+    "sha256": "c679f4bd7e270a9b539ad465f5e79dd2c93a771cb3329eae6cc38d2671af533f"
   },
   {
     "path": "governance/example_agent_review.yaml",
@@ -513,6 +528,11 @@
     "path": "tests/test_factor_chain.py",
     "bytes": 516,
     "sha256": "f78069264069e0d949872fab69501e56ab3d06ebfba89b11a33fd6556032071f"
+  },
+  {
+    "path": "tests/test_gcl_component_routing.py",
+    "bytes": 5798,
+    "sha256": "5ff0d278c4dce2d1e2d5104304b012a572124514b4c8921d640a9972a8ae7910"
   },
   {
     "path": "tests/test_governance.py",
